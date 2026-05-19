@@ -1,8 +1,12 @@
-# Style Library — 10 Visual Style Profiles
+# Style Library — 18 Visual Style Profiles
 
 Each profile defines the full parameter set for the master prompt template in SKILL.md. Read the chosen profile in full before assembling any prompt.
 
 **Critical instruction on typography:** Font names do not reliably transfer to AI image models. Always describe typography using visual geometry — stroke weight, letterform proportions, spacing behavior, and spatial relationship to the frame. The descriptions below are written for this purpose. Use them verbatim in prompts.
+
+**Critical instruction on subject transformation:** The "Subject transformation logic" section in each profile is the most important field. It tells the model exactly what to do to the uploaded image — what to simplify, what to keep, what rendering style to force. Without this, models default to photorealistic and over-detailed. If the first generation looks like a photo with text on it, the transformation instructions weren't strong enough — strengthen and retry.
+
+**Critical instruction on output feeling:** The "Output feeling" section is a taste nudge, not a quality note. "High resolution" tells the model nothing useful. "Should feel like it was pulled off a press in 1965 Osaka" gives it a target. Always include this section verbatim at the end of every prompt.
 
 ---
 
@@ -20,6 +24,14 @@ Each profile defines the full parameter set for the master prompt template in SK
 | 8 | Typographic Sculpture | Declarative | Manifestos, brand culture, talks |
 | 9 | Dark Fashion Editorial | Cinematic | Fashion, beauty, luxury launches |
 | 10 | Contemporary Swiss / Museum | Intellectual | Cultural events, exhibitions, galleries |
+| 11 | Blueprint Core | Precise | Tech products, engineered objects, explainer campaigns |
+| 12 | Archival Trinket | Nostalgic | Lifestyle, wellness, fashion, personal brands |
+| 13 | Punk Grunge | Rebellious | Music, streetwear, activist campaigns, underground events |
+| 14 | Future Medieval | Mythic | Nightlife, music releases, luxury fashion, gaming |
+| 15 | Surveillance Design | Cold | Tech campaigns, editorial, conceptual art, identity work |
+| 16 | Signal Aesthetic | Kinetic | Apparel, digital campaigns, podcast visuals, Y2K brands |
+| 17 | Frutiger Aero | Optimistic | Tech, SaaS, digital products, retro-futurist brands |
+| 18 | Type Collage | Chaotic-good | Social content, streetwear, zine culture, bold brand moments |
 
 ---
 
@@ -76,8 +88,11 @@ Vintage Japanese graphic poster aesthetic with a strictly limited 2–3 color pa
 - Halftone dot pattern in all shadowed or dark fill areas
 - Slightly imperfect edges on large color fills — not perfectly crisp digital edges
 
-**Output notes:**
-Bold graphic simplification, strong color blocking, intentional typography. Should feel like it was pulled off a press in 1965 Osaka. The misregistration and halftone are not optional — they are what separates this from a generic flat design.
+**Subject transformation logic:**
+This is not a photograph. Take the uploaded image and convert it into a flat graphic illustration. Reduce every form to its simplest recognizable shape — a bowl becomes an oval with a curved rim, noodles become flowing ribbons, toppings become simple geometric clusters. Remove all photographic detail, lighting, shadow, and texture from the subject itself. Apply deep blue as the fill color to the entire illustration with selective red accents on one or two highlight elements. The goal: the subject should look like it was drawn by a skilled graphic artist in 1960s Japan, not photographed. If it still looks like a photo, simplify further.
+
+**Output feeling:**
+Should feel like it was pulled off a letterpress in 1965 Osaka — graphic, proud, and slightly imperfect. The misregistration and halftone texture are not decoration, they are proof of the printing process. A viewer should want to frame this.
 
 ---
 
@@ -135,8 +150,11 @@ Mid-century modern print aesthetic. Muted duotone palette — dusty blue or fade
 - Slight text misalignment for authentic print feel
 - No sharp digital edges — everything slightly softened
 
-**Output notes:**
-Preserve any subject glow as a warm focal highlight against the cool background. The visual tension between warm subject and cool field is the entire design argument.
+**Subject transformation logic:**
+Isolate the subject from its background entirely — no environment, no context, just the object. Do not illustrate it; keep its photographic quality but apply a desaturation treatment that removes approximately 60% of color saturation while preserving warm highlights. The subject should look like a beautifully lit studio photograph that has been aged and slightly faded. Any glow, light emission, or warm material highlight must be preserved — this is the single point of visual warmth against the cool background and is the entire contrast argument of the poster.
+
+**Output feeling:**
+Should feel like tearing a page from a 1972 design magazine and finding it was better than anything being made today. Quiet confidence. The kind of poster that doesn't need to be loud because it knows it's right.
 
 ---
 
@@ -195,8 +213,11 @@ Contemporary European event poster aesthetic. Bold horizontal color blocking cre
 - Illustration brushwork should feel slightly hand-made, not vector-clean
 - Text is crisp and digital — the contrast between raw illustration and clean type is intentional
 
-**Output notes:**
-The energy comes from the tension between structured layout and expressive illustration. Do not over-clean the illustration — the looseness is the point.
+**Subject transformation logic:**
+This is not a photograph. Convert the subject or any figures into gestural, painterly illustration — think loose brushwork, slightly wrong proportions, forms that feel observed rather than measured. Apply thick black outlines of uneven weight to all major forms. Fill each form with a flat saturated color — no gradients, no blending between fill areas. Allow figures and forms to overlap expressively. The illustration should feel like someone painted it quickly with urgency and confidence, not carefully with precision. If it looks polished or photorealistic, it's wrong.
+
+**Output feeling:**
+Should feel like it was designed at 2am by someone who has very good taste and very strong opinions. Raw but not accidental. The kind of poster people photograph on the street.
 
 ---
 
@@ -247,8 +268,11 @@ Contemporary digital-meets-analog aesthetic. The background is a full-bleed abst
 - Text edges slightly soft — not razor sharp
 - No borders, no frames, no geometric elements of any kind
 
-**Output notes:**
-The restraint of having only typography on an abstract field is the design statement. Do not add illustration, icons, or structural elements. If it feels too empty, the answer is better copy placement — not more visual elements.
+**Subject transformation logic:**
+If an image is uploaded: apply extreme defocus blur until no recognizable form or edge remains — only color fields, light blooms, and atmospheric gradients should survive. The original subject must be completely unrecognizable. What remains should feel like looking through frosted glass at colored light, or a macro photograph of pigment dissolving in water. If no image is uploaded: generate an abstract painterly color field using the palette specified — warm and cool zones bleeding into each other with soft bloomed edges. Under no circumstances should any recognizable shape, face, object, or text appear in the background layer.
+
+**Output feeling:**
+Should feel like a feeling, not a thing. The viewer should experience the emotion of the copy before they finish reading it. If someone could explain what the background image is, it hasn't been abstracted enough.
 
 ---
 
@@ -306,8 +330,11 @@ Dense, joyful illustration maximalism. Black background. Every inch of space fil
 - White outlines consistent weight throughout
 - High contrast — black and white relationships are bold
 
-**Output notes:**
-Density and specificity are what make this style work. Generic icons feel like clip art. Every element should be legible as this subject, this place, this event.
+**Subject transformation logic:**
+Do not use the uploaded photograph directly. Translate the subject into the flat illustrated icon language of this style: reduce it to its most recognizable silhouette, apply flat primary color fills with no gradients or shadows, and add a consistent thick white outline stroke around the entire form. The subject becomes one icon among many — it should feel like it belongs to a family of characters and objects, all drawn with the same hand and the same rules. Build 8–12 additional thematic icons around the subject using the same visual language. Everything on a pure black background.
+
+**Output feeling:**
+Should feel like a limited-edition screen print you'd buy at a stadium merch table and immediately regret not buying two of. Maximum energy. Zero restraint. Every inch of space is accountable.
 
 ---
 
@@ -365,8 +392,11 @@ Warm illustrated landscape poster tradition — equal parts Grateful Dead concer
 - Color fills slightly uneven — looks screen-printed or hand-painted
 - No film grain — this is illustration texture, not photography texture
 
-**Output notes:**
-The illustrated world-building is what makes this style. A generic landscape fails — it needs specific, character-filled details that belong to this event, this place.
+**Subject transformation logic:**
+Do not use the photograph directly. Translate the subject and its context into a fully illustrated scene — every element hand-drawn, nothing photographic. Build an environmental world specific to this subject: place it in a landscape with relevant natural elements (mountains, trees, sun, animals, botanical details) arranged symmetrically. Apply flat color fills with bold dark outlines to every element. The illustration should feel lovingly hand-crafted, as if someone spent three weeks drawing every mushroom and bird individually. Generic landscape elements fail — every detail must be specific to this subject's world.
+
+**Output feeling:**
+Should feel like a poster you'd find rolled up in a vintage shop and immediately buy for your cabin wall. Warm, specific, and made with love. The kind of thing people keep for 40 years.
 
 ---
 
@@ -423,8 +453,11 @@ Deliberately rough, childlike aesthetic — but with taste. Chunky hand-drawn di
 - Edges of display type slightly rough — not perfectly digital
 - No drop shadows, no gradients
 
-**Output notes:**
-The balance between rough and considered is the hardest thing to get right. Everything should look casual but nothing should look accidental. The figure needs energy and movement — a static pose kills it.
+**Subject transformation logic:**
+Do not use the photograph directly. Translate the subject into a single gestural line drawing — one continuous or near-continuous crayon or pastel line that captures the essential movement and energy of the subject without filling in any details. The line should have visible texture (crayon wax, chalk grain) and vary slightly in pressure — thicker where the tool pressed harder, thinner where it lifted. No fill colors inside the line drawing. The figure should feel alive and in motion. If it looks static or too precise, redraw it looser. Two colors total across the entire poster.
+
+**Output feeling:**
+Should feel like it was made at midnight by someone who is very talented and completely unbothered by perfection. Casual confidence. The roughness is the point — if it looks too clean, it's failed.
 
 ---
 
@@ -475,8 +508,11 @@ No subject image. This style requires only text. If the user uploads an image, a
 - Type edges: Sharp and crisp — this is the one style where precision is correct
 - No paper grain, no ink bleed, no misregistration
 
-**Output notes:**
-Specify the exact line breaks for the display copy in the prompt. This is not optional — it determines the rhythm and success of the composition.
+**Subject transformation logic:**
+No subject image. The copy provided by the user IS the subject. The typographic treatment of that copy — its scale, weight, line breaks, and spatial tension — is the entire design. Before assembling the prompt, determine the optimal line breaks for the display copy: each break should create rhythm, emphasis, or surprise. A four-word phrase broken as two words per line reads differently than three words then one. Choose the breaks deliberately and specify them explicitly in the prompt. The line breaks are an editorial decision, not a layout accident.
+
+**Output feeling:**
+Should feel like someone had a very strong opinion and printed it on a wall. Authoritative without being aggressive. The kind of thing a design studio frames in their lobby and means it.
 
 ---
 
@@ -537,8 +573,11 @@ Full-bleed moody photography — deep, saturated background tones (crimson, noir
 - Lens bloom at practical light sources
 - Rounded corner frame — subtle radius, feels like a printed card
 
-**Output notes:**
-Ask for dramatic directional lighting and deep background tones. Flat, evenly lit photography does not work in this style.
+**Subject transformation logic:**
+Keep the photograph but apply three transformations: (1) color grade — push the background tones toward deep crimson, noir black, or jewel tone using a strong LUT-style color shift that unifies the entire image; (2) grain — add heavy film grain across the full image surface, visible at normal viewing distance; (3) mystery — introduce intentional partial obscuring of the face or form through shadow, lens blur on one side, or a hand/object crossing in front. The subject should look like a film still extracted from a movie that hasn't been made yet. Do not retouch skin or smooth surfaces — imperfections are authentic.
+
+**Output feeling:**
+Should feel like you walked into a room and someone important was there. High stakes. The kind of campaign image that makes you stop scrolling. Cinematic confidence without trying.
 
 ---
 
@@ -598,5 +637,510 @@ Contemporary interpretation of Swiss International Style. Warm off-white backgro
 - Plus marks: crisp, precise, vector-sharp
 - No ink bleed, no misregistration — this style values precision
 
-**Output notes:**
-Restraint is the entire design argument. The scale contrast between massive title and tiny body copy is the primary visual tension. Do not add elements to fill space — let the space breathe. The Studio Air reference is the clearest example of this style executed correctly: two lines of massive lowercase type, a small subtitle, two plus marks, one photo, and a minimal footer. Nothing else.
+**Subject transformation logic:**
+Convert the photograph into a contained rectangular inset — crop it to a horizontal or near-square format and treat it as a document or specimen, not a hero image. Apply desaturation (reduce color intensity by approximately 70%) and a subtle duotone or grain treatment so it reads as an archival or printed photograph. Place it in the middle-lower zone of the poster, not full-bleed. The photograph should feel like evidence or illustration, not the focal point. The massive display typography at the top is the focal point. If the photo is drawing more attention than the type, it's too prominent.
+
+**Output feeling:**
+Should feel like an invitation from somewhere that doesn't need to impress you. Considered, precise, and completely sure of itself. The kind of design that gets better the longer you look at it.
+
+---
+
+## Style 11 — Blueprint Core
+
+**Mood:** Precise, witty, engineered. Feels like a product manual that became art.
+**Best for:** Tech products, food/object deconstructions, engineered goods, explainer campaigns, maker culture.
+**Reference:** Kittl 2026 trend — Blueprint Design. Isometric typography posters, Vancouver Maker Faire, exploded ramen schematics.
+
+### Parameters
+
+**Aesthetic description:**
+Technical drawing aesthetic borrowed from engineering workshops and architect offices. Hyper-detailed annotation language — dimension arrows, measurement labels, exploded views, cross-section diagrams, isometric projections — applied to any subject as pure graphic play. Monochromatic: white linework on deep blue, or blue linework on white/cream. Every element feels documented and considered. Over-explaining is the aesthetic — the subject becomes more interesting because it has been taken apart and labeled.
+
+**Subject treatment:**
+- Deconstruct the subject into an exploded or isometric illustration — components pulled apart and floating in space with lines connecting them back to the whole
+- All illustration: clean single-weight linework, no fills except the background color
+- Add dimension arrows, measurement annotations, and component labels to every major part
+- Include at least one cross-section or cutaway view showing interior detail
+- Apply consistent stroke weight throughout — any variation breaks the blueprint illusion
+- Subject should feel like it has been placed on a drafting table and studied
+
+**Composition rules:**
+- Background: solid deep blue OR white/cream — never photographic
+- All elements rendered in a single contrasting color (white on blue, or blue on white)
+- Isometric or orthographic projection — no perspective distortion
+- Title block in one corner (bottom right traditionally) with title, date, scale notation
+- Grid of fine lines visible across the entire background — the drafting paper grid
+- Generous space around the main illustration — let the technical elements breathe
+
+**Layout logic — where copy lands:**
+- Center or upper-center: Main exploded/isometric illustration of the subject
+- Throughout illustration: Component labels in small monospaced type with leader lines pointing to each part
+- Bottom right: Title block — primary title, subtitle, date, version number in structured grid
+- Top or sides: Optional dimension annotations and scale indicators
+- Scattered: Measurement arrows with numbers, callout circles with letters referencing a legend
+
+**Typography — visual geometry specification:**
+- All text: Monospaced letterforms — every character occupies exactly the same horizontal width. The strokes are uniform weight, thin to medium, with no thick-thin variation. Terminals are cut flat at 90 degrees. Characters feel like they were typed on a typewriter or output from a plotter. This is engineering annotation type, not display type.
+- Primary title (in title block): Same monospaced construction at larger scale — approximately 3x the annotation text height. All caps. Still monospaced — does not switch to a display font for the title.
+- Dimension numbers and labels: Same monospaced at very small scale — annotation size, precise, clinical.
+- Leader lines: Single-weight lines with a small arrowhead or dot at the point of connection. The line weight matches the illustration linework exactly.
+- Critical: Every single character across the entire poster must be monospaced. No mixing of font styles. The visual uniformity of monospaced type is what makes the blueprint illusion convincing.
+
+**Color palette:**
+- Version A (Classic Blueprint): Deep blueprint blue `#1A3A6A` background, white `#FFFFFF` linework and type
+- Version B (Technical White): White `#FFFFFF` or warm cream `#F5F0E8` background, blueprint blue `#1A3A6A` linework and type
+- Single color only — no accent colors, no gradients
+- Grid lines: same color as linework at 20–30% opacity
+
+**Texture & finish:**
+- Fine grid overlay across entire background (like graph paper or drafting paper)
+- Optional: very subtle paper or linen texture at low opacity
+- All lines crisp and precise — no roughness, no hand-drawn variation
+- No grain, no blur, no photographic texture
+
+**Subject transformation logic:**
+Do not use the photograph directly. Translate the subject into a technical illustration: an isometric or orthographic line drawing that deconstructs the subject into its component parts, pulled apart in space with connection lines between them (an exploded view). Every line must be the same weight — uniform stroke throughout. Add dimension arrows with measurements, numbered callout labels for each component, and at least one cross-section view. Apply zero fill — white linework only on the blue background, or blue linework only on the white background. The subject should look like it was drawn by an engineer preparing a manufacturing specification, not by a designer.
+
+**Output feeling:**
+Should feel like the most considered product description ever made. Witty and precise in equal measure. The kind of poster that rewards reading every small label — and they should all say something worth reading.
+
+---
+
+## Style 12 — Archival Trinket
+
+**Mood:** Nostalgic, curated, quietly personal. Feels like someone's most meaningful drawer emptied onto a museum sheet.
+**Best for:** Lifestyle brands, wellness, personal fashion, small businesses, seasonal campaigns, object-based storytelling.
+**Reference:** Kittl 2026 trend — Trinket Design. Museum catalog sheets, "what's in my bag" Pinterest aesthetics, scrapbook object arrangements.
+
+### Parameters
+
+**Aesthetic description:**
+Everyday objects elevated to artifact status through careful curation and presentation. Objects arranged in neat grids or organic clusters on neutral backgrounds — scanned silhouettes, top-down photographs, or clean illustrations with museum-style numbering and labels. Part still life, part scrapbook, part specimen sheet. The logic is catalog: every object is numbered, named, and given equal visual weight. Deeply nostalgic, tactile, and emotionally specific.
+
+**Subject treatment:**
+- Isolate 6–12 objects related to the subject/theme — specific, personal, thematically connected items
+- Each object: clean silhouette against the background with a subtle drop shadow (soft, not dramatic)
+- Arrange in a grid with consistent spacing OR in an organic cluster that still feels considered
+- Add small numbered labels (①②③ or 01, 02, 03) next to each object
+- Optional: small descriptive caption beneath each number in tiny type
+- Objects should be specific and telling — not generic. A coffee brand: specific cup, specific bean variety bag, a worn spoon, a handwritten recipe card
+
+**Composition rules:**
+- Neutral background: warm cream, soft gray, or aged white — never bright or saturated
+- Objects arranged so negative space between them is roughly equal — breathing room is essential
+- One object may be slightly larger or more central as the hero item — others support it
+- Border or frame: thin ruled line inset from edges, or no border at all
+- Title block: either integrated as a header or very small at the bottom
+- Overall feel: considered and quiet — a museum display case, not a cluttered table
+
+**Layout logic — where copy lands:**
+- Top or top-left: Collection title or brand name — small, light weight, understated
+- Scattered near objects: Numbered labels (① ② ③) in tiny type, each with a short descriptor on the next line
+- Bottom center or bottom right: Date, edition, or series label — very small
+- Optional bottom: One sentence description of the collection — what unifies these objects
+- No large display type — all copy is small, quiet, deferential to the objects
+
+**Typography — visual geometry specification:**
+- All text: Light or thin weight letterforms — strokes so fine they feel like they were printed with a dry pen. Moderate letter-spacing, not tightly set. Characters are upright, not italic. The overall impression is of a museum or catalog label — informative, neutral, unobtrusive.
+- Collection title: Same thin letterforms at slightly larger scale — approximately 2x the label text. Still modest — this is not a display headline.
+- Numbers/labels: Monospaced or near-monospaced thin type at very small scale. Could be circled numbers (①) or plain numerals with periods.
+- Critical: There is no display type in this style. Everything is small and considered. The objects do the visual work — the type serves them, never competes.
+
+**Color palette:**
+- Dominant (background): Warm cream `#F5F0E8`, soft warm gray `#E8E4DE`, or aged white `#F0EDE8`
+- Object silhouettes: Natural object colors, slightly desaturated — muted, not vivid
+- Type: Dark warm brown-black `#2A2018` or deep gray `#333333`
+- Optional accent: One object in a slightly more saturated color as the hero — just one
+- No pure white, no pure black, no saturated accent colors
+
+**Texture & finish:**
+- Subtle paper grain across the background
+- Objects: slight desaturation and a very soft shadow beneath each
+- Optional: aged paper or linen texture overlay at very low opacity
+- Type: slightly soft edges — feels printed, not digital
+- No film grain, no blur — everything reads clearly
+
+**Subject transformation logic:**
+Do not use the photograph as a full-bleed image. Instead, isolate the subject and 5–11 additional objects thematically related to it. Photograph or render each object individually against a neutral background with a soft overhead light that creates a gentle shadow beneath. Apply slight desaturation (reduce color by ~30%) to all objects. Arrange the full set in a considered grid or organic cluster on the neutral background with consistent spacing. Add a small numbered label (① ② ③) next to each object. The objects must be specific and personally meaningful — not generic props. Generic objects destroy this style.
+
+**Output feeling:**
+Should feel like someone opened their most meaningful drawer and arranged it for you to see. Personal without being private. The kind of image that makes people say "I didn't know I needed this" and then immediately think about what their version would look like.
+
+---
+
+## Style 13 — Punk Grunge
+
+**Mood:** Rebellious, raw, alive. Feels like it was photocopied three times and wheat-pasted over something else.
+**Best for:** Music releases, streetwear, activist campaigns, underground events, brands rejecting polish.
+**Reference:** Kittl 2026 trend — Punk Grunge. DIY zine culture, xerox art, 1970s–80s punk flyer tradition, torn collage aesthetics.
+
+### Parameters
+
+**Aesthetic description:**
+DIY print culture at maximum intensity. Xerox grain, torn paper edges, distressed textures, hand-cut collage, overexposed photography, handwritten or rubber-stamp type mixed with aggressive display type. Nothing is clean, nothing is smooth, nothing is centered unless deliberately so as an ironic statement. The message is: this was made by human hands under urgency. Every element looks like it could be peeled off a telephone pole.
+
+**Subject treatment:**
+- Apply heavy grain, overexposure, or xerox-style high-contrast treatment to any subject photo
+- Push contrast to near black-and-white — most midtones are lost
+- Optional: halftone dot pattern applied over the subject (large dots, visible at normal viewing distance)
+- Torn or rough-cut edges where the subject meets the background — not clean silhouettes
+- Layer the subject behind or beneath type elements — text overlaps the image aggressively
+- Multiple exposure or photocopy artifacts welcome — doubling, ghost edges, ink smear
+
+**Composition rules:**
+- No single dominant compositional logic — elements feel assembled under urgency
+- Mix of vertical, horizontal, and diagonal text orientations
+- Torn paper shapes as background zones or dividers
+- Heavy use of negative space in unexpected places alongside areas of total density
+- Borders: either none, or a rough hand-drawn rectangle in marker weight
+- Overall: it should look like someone assembled this on a floor with scissors and a photocopier
+
+**Layout logic — where copy lands:**
+- Primary title: Large, aggressive, could be anywhere — top, center, or broken across two areas
+- Subtitle: Different orientation from the title — if title is horizontal, subtitle is diagonal or vertical
+- Scattered: Short phrases, words, or numbers at varied scales and angles — not aligned to a grid
+- Optional handwritten annotation: One or two words scrawled by hand in a contrasting color
+- Bottom or anywhere: Date, location, handle — in rubber-stamp style or very small distressed type
+- No consistent margin or padding — elements bleed to or past the edge
+
+**Typography — visual geometry specification:**
+- Primary display: Extremely heavy letterforms — stroke weight is 30–40% of total character height. Characters are wide, solid, and dense. No interior space visible in rounded letters — the counter is nearly or completely filled by the stroke weight. The letterforms feel like they were cut from black paper. Alternatively: a mix of two incompatible type styles in the same line — one heavy slab, one handwritten — creating deliberate typographic tension.
+- Secondary type: Handwritten letterforms — uneven stroke width, characters that vary in height slightly, baseline that rises and falls. Feels like it was written quickly with a marker or brush.
+- Distressed treatment on all type: edges are rough, ink bleeds slightly, individual characters may have missing pixels or grain artifacts — not perfectly rendered.
+- Rubber stamp style for detail text: slightly misaligned, ink-saturated at center and fading at edges, slight rotation off perfectly horizontal.
+- Critical: No clean digital type anywhere. Every letterform should show evidence of being made or reproduced by hand or machine — grain, smear, bleed, or roughness.
+
+**Color palette:**
+- Base: Black `#0A0A0A` or very dark ground, OR stark white/newsprint `#F5F0E2`
+- Primary type and illustration: High contrast to base — white on black or black on white
+- Accent: One saturated color used sparingly — signal red `#CC1A1A`, acid yellow `#F5D800`, or safety orange — for one word, one shape, or one element only
+- Optional: Overprint effect — two colors that weren't meant to align creating a third color where they overlap
+- No gradients, no muted pastels — maximum contrast everywhere
+
+**Texture & finish:**
+- Heavy xerox grain across the entire image — grain so pronounced it reads as a design element
+- Torn paper edges on major shapes — irregular, fibrous, not cut cleanly
+- Ink bleed and smear on type edges
+- Halftone dot pattern on photographic elements — large dots, visible pattern
+- Optional: fold marks or crease lines across the image as if it had been folded and unfolded
+- No smooth surfaces anywhere
+
+**Subject transformation logic:**
+Apply a xerox/photocopy simulation to any uploaded photograph: push contrast to near black-and-white (eliminate most midtones), apply heavy grain that reads as a design element not background noise, add a large-dot halftone pattern over the image. The subject should look like it was photocopied three times on a machine that was running low on toner. All photographic smoothness, gradients, and color information should be destroyed. Layer this treated image behind type elements — text runs over and through the image aggressively. Torn paper shapes may be composited in to create zones.
+
+**Output feeling:**
+Should feel like it was made under urgency with whatever was available. Photocopied, cut, glued, and wheat-pasted on a wall before anyone could stop it. Alive in a way that no polished design can be.
+
+---
+
+## Style 14 — Future Medieval
+
+**Mood:** Mythic, sacred, darkly ornate. Feels like a cathedral rebuilt inside a server room.
+**Best for:** Nightclub events, music releases, luxury fashion, gaming brands, dark creative agencies, NYE events.
+**Reference:** Kittl 2026 trend — Future Medieval. Gothic heraldry + digital chrome effects, blackletter type with neon glow, illuminated manuscript patterns rendered in holographic material.
+
+### Parameters
+
+**Aesthetic description:**
+Medieval visual vocabulary — blackletter type, heraldic crests, illuminated manuscript borders, gothic arches, mythic creatures, candles, ribbons, banners — fused with digital-age rendering: chrome reflections, iridescent surfaces, neon inner glows, and dark electronic event poster energy. The sacred and the synthetic. Feels like a nightclub that was consecrated as a chapel, or a fashion brand that worships at an altar.
+
+**Subject treatment:**
+- Render the subject in the visual language of medieval sacred objects — gilded, ornate, reverential
+- Apply chrome or iridescent surface treatment to key elements — reflective, holographic, shifting
+- Surround the subject with heraldic or manuscript-style border decorations: knotwork, vine ornaments, shield shapes, banner ribbons
+- Optional: place the subject within a gothic arch or illuminated manuscript frame
+- Dark, rich background — deep black, midnight purple, or dark jewel tone
+- Candle glow, torch light, or inner neon light emanating from the subject as the light source
+
+**Composition rules:**
+- Strong vertical symmetry — heraldic compositions are almost always bilaterally symmetrical
+- Subject centered, elevated — placed at the top center or center of the composition as an object of veneration
+- Decorative border elements frame the entire poster — corner ornaments, side vine work, bottom heraldic flourishes
+- Rich density — every area of the poster has some ornamental presence
+- Title integrated into a banner or ribbon element, or set in blackletter that reads as part of the decoration
+
+**Layout logic — where copy lands:**
+- Top: Event name or primary title in large blackletter or gothic display — centered, could be set on a banner ribbon shape
+- Below title: Heraldic crest or shield element as a visual separator
+- Center: Subject — the focal image or illustration, centrally placed
+- Mid-poster sides: Supporting heraldic elements (shields, creatures, banners) flanking the subject symmetrically
+- Bottom: Date, location, and supporting details — on a banner ribbon or in small gothic type
+- Very bottom: Sponsor or series information in small type
+
+**Typography — visual geometry specification:**
+- Primary title: Gothic blackletter letterforms — each character built from diamond-shaped strokes meeting at sharp angles, with dramatic thick-thin variation. The thick strokes are approximately 5–6x the width of the thin hairline strokes. Ascenders and descenders are elongated. The overall impression is of letterforms chiseled from stone or drawn with a broad-nib pen held at a fixed angle. Characters are compressed horizontally — tall and narrow. May include chrome or iridescent surface treatment on the letterforms themselves.
+- Secondary / detail type: Either very small blackletter at fine scale, OR a contrasting modern thin sans-serif — the contrast between gothic blackletter and clinical modern sans is a deliberate design signature of contemporary Future Medieval work.
+- Ornamental letterforms: Initial capitals may be fully illustrated — embedded in decorative borders, with vine work growing from the serifs.
+- Critical: The blackletter must have visible thick-thin stroke contrast. Uniform-weight gothic letterforms do not achieve this aesthetic. The drama of the style lives in the stroke weight variation.
+
+**Color palette:**
+- Dominant (background): Near-black `#0A0008`, midnight purple `#1A0A2A`, or deep crimson `#2A0A0A`
+- Heraldic elements: Deep jewel tones — burgundy `#6A1A2A`, forest green `#1A3A1A`, royal blue `#1A1A5A`
+- Chrome/iridescent accents: Holographic gradient — shifts from gold to pink to blue depending on position. Applied to key elements only.
+- Type: Off-white `#F5F0E8` or pale gold `#D4B870` — aged parchment tones
+- Inner glow: Soft warm candlelight `#F5C870` emanating from practical light sources within the composition
+- No flat bright colors — everything is deep, saturated, and rich
+
+**Texture & finish:**
+- Aged parchment or dark velvet texture across background
+- Chrome/iridescent finish on select elements — holographic, shifting
+- Inner glow on candles, crystals, or light sources — soft, warm
+- Gold or silver foil effect on heraldic border elements
+- Slight grain across the full image — aged, not digital-smooth
+
+**Subject transformation logic:**
+Render the subject as a sacred or reverential object — elevate it visually as if it were being presented at an altar. Apply a chrome or iridescent surface treatment to the subject itself: reflective, holographic, shifting colors (gold to pink to blue). Surround it with heraldic border decorations specific to the subject's world (shields, ribbons, knotwork, mythic creatures). The background should be near-black with deep jewel-tone gradients. A warm candlelight or torch-like glow should emanate from the subject as the light source. The overall rendering should feel like medieval illuminated manuscript technique applied to digital chrome materials.
+
+**Output feeling:**
+Should feel sacred and slightly dangerous at the same time. The kind of poster that looks like it belongs in both a cathedral and a club. A viewer should feel like they're being invited into something exclusive and ancient.
+
+---
+
+## Style 15 — Surveillance Design
+
+**Mood:** Cold, precise, watchful. Feels like you've been seen by a system that doesn't care about you.
+**Best for:** Tech campaigns, editorial design, conceptual art projects, identity and privacy themes, fashion with edge.
+**Reference:** Kittl 2026 trend — Surveillance Design. CCTV stills, facial recognition UI, biometric HUDs, thermal imaging, machine vision overlays.
+
+### Parameters
+
+**Aesthetic description:**
+Machine vision aesthetic extracted from security infrastructure. CCTV feed frames, bounding boxes around faces and bodies, facial recognition grids, biometric data overlays, thermal imaging color maps, crosshairs, system log typography, timestamp HUDs. The palette is cold and utilitarian: monochrome with occasional functional color (green for recognized, red for flagged, blue for data). Everything feels like UI that was designed for observation, not for aesthetics — and that functional coldness is what makes it visually striking when applied to design.
+
+**Subject treatment:**
+- Place the subject inside a CCTV-style frame or bounding box — a rectangle drawn in the accent color with corner markers only (not full sides), or a full rectangle with a label above
+- Apply facial recognition or object recognition overlays: landmark dots on key features, measurement lines between them, confidence percentage label
+- Optional: thermal imaging color treatment — dark blue/purple for cool areas, bright yellow/orange/white for warm areas
+- Timestamp, camera ID, and scene number overlaid in the corner(s)
+- Slight compression artifact or low-resolution pixelation treatment on the subject photo
+- Subject should feel documented, not glamorized
+
+**Composition rules:**
+- Dark background — black or very dark gray — like a monitor in a dark room
+- Subject placed within a structured frame or grid system — never floating freely
+- Multiple overlapping UI elements: bounding boxes, crosshairs, data readouts, progress bars
+- Strict grid logic — all UI elements align to an invisible grid
+- Monochrome with one functional accent color: safety green `#00FF41`, warning red `#FF2200`, or data blue `#00AAFF`
+- Feels like a screenshot of a real system — not a designed poster about surveillance
+
+**Layout logic — where copy lands:**
+- Top bar: Camera ID, location label, timestamp — small monospaced type, left and right aligned
+- Over subject: Recognition bounding boxes with label above (e.g. "FEMALE MUSE", "TARGET", "SUBJECT A")
+- Scattered data points: Confidence percentages, measurement readouts, system status labels
+- Side panels (optional): Data columns — lists of attributes, measurements, status flags in small monospaced type
+- Bottom bar: Scene number, date, system version, operator ID — same monospaced treatment as top bar
+- No traditional "title" placement — all copy is functional data, not design copy
+
+**Typography — visual geometry specification:**
+- All text without exception: Monospaced letterforms — every character the same width. Stroke weight is thin to medium, uniform throughout. No thick-thin variation. No serifs. Characters look like terminal output or system font — OCR-adjacent, functional, inhuman.
+- Bounding box labels: Same monospaced type in the accent color (green, red, or blue). All caps. Very small scale relative to the bounding box.
+- Data readouts: Same monospaced at even smaller scale — 2–3% of poster height. Dense information.
+- Timestamp: Same monospaced at small scale — top corners, functional placement.
+- Critical: There must be zero design intent visible in the typography. All type should look like system output. Any decorative or expressive letterform destroys the illusion.
+
+**Color palette:**
+- Dominant (background): Near-black `#0A0A0A` or very dark gray `#111116`
+- Subject: Monochrome or slightly desaturated — cold, drained of warmth
+- Primary accent: Safety green `#00FF41` (recognition confirmed), warning red `#FF2200` (flagged/alert), or data blue `#00AAFF` (information/tracking) — pick ONE and use consistently
+- All UI elements: accent color only — no mixing of accent colors
+- Optional: thermal imaging treatment substitutes the monochrome palette entirely with heat-map colors (deep blue → purple → red → orange → white)
+
+**Texture & finish:**
+- Subtle CRT scan line overlay — horizontal lines at 2–3px intervals, very low opacity
+- Slight compression artifact grain on the subject photo
+- Optional: a faint vignette on the subject as if from a security camera lens
+- UI elements: crisp, no blur, pixel-perfect
+- No paper grain, no film grain — this is a digital system aesthetic
+
+**Subject transformation logic:**
+Keep the photograph but apply machine vision overlays: draw a bounding box around the primary subject using corner markers in the accent color (green, red, or blue), add a label above the box in monospaced type (e.g. "FEMALE MUSE", "TARGET OBJECT", "SUBJECT A"), and include a confidence percentage below. Apply slight desaturation and compression artifact grain to the photograph itself so it looks like CCTV footage. Add a timestamp in the corner and a camera ID. The photograph should look like it was captured by a system that doesn't know it's being used for design.
+
+**Output feeling:**
+Should feel cold and precise — like being observed by something that doesn't care about you. Unsettling in a way that's also compelling. The clinical emptiness is what creates the visual tension.
+
+---
+
+## Style 16 — Signal Aesthetic
+
+**Mood:** Kinetic, overstimulated, nostalgic for a future that felt possible. Feels like the intro sequence of a show you watched on Saturday morning.
+**Best for:** Apparel, music releases, digital campaigns, podcast visuals, brands with Y2K nostalgia, energetic social content.
+**Reference:** Kittl 2026 trend — Signal Graphics. 90s TV broadcast idents, MTV bumpers, early CGI, RGB color separation, glitch letterforms, colliding shapes.
+
+### Parameters
+
+**Aesthetic description:**
+Visual language of 1990s television branding and broadcast design — the era of channel idents, music channel bumpers, and early CGI title sequences. Animated shapes that appear to be mid-motion: colliding, mutating, exploding. RGB color channels separated and offset so red, green, and blue versions of each element are slightly misaligned. Hyper-saturated primary and neon colors. 3D-looking objects rendered in the style of early CGI — slightly plastic, slightly wrong. Text that appears to be in motion — stretched, compressed mid-action.
+
+**Subject treatment:**
+- Render the subject in a stylized 3D or flat-3D treatment — isometric or slight perspective, plastic-looking surface
+- Apply RGB channel separation to the subject: three slightly offset versions in red, green, and blue creating a glitch halo
+- Subject appears mid-motion — blur trails, speed lines, or motion smear in the direction of implied movement
+- Background: bright saturated gradient or solid field — aqua, electric blue, hot magenta — never neutral
+- Optional: render subject as if it is breaking out of or shattering into its component shapes
+
+**Composition rules:**
+- Dense, energetic — multiple elements competing for attention simultaneously
+- Strong diagonal movement lines and shape trajectories across the composition
+- Multiple layers: background shapes, subject, foreground shape fragments, text
+- No clear hierarchy — everything fights for attention with approximately equal energy
+- Shapes: geometric — stars, circles, triangles, arrows, lightning bolts — scattered throughout
+- Bleeds to all edges — no border, no frame, no breathing room
+
+**Layout logic — where copy lands:**
+- Primary title: Large, appearing to stretch or compress mid-frame — as if filmed at the moment of transformation
+- Title may be split across multiple lines with different scales suggesting motion toward or away from the viewer
+- Supporting text: At varied angles, embedded within the shape field — no predictable placement
+- Date/detail: Small, could be set in a TV-style lower-third bar with a background rectangle
+- Overall: Copy placement suggests it was frozen mid-animation, not designed statically
+
+**Typography — visual geometry specification:**
+- Primary display: Letterforms with extreme weight — strokes approximately 25–35% of character height. Characters may appear stretched horizontally (wider than tall) or compressed vertically (taller than wide) to suggest motion. RGB channel separation applied: the same word appears three times in red, green, and blue, offset by 3–6px in different directions, creating a chromatic aberration halo. The combined effect looks like the type is vibrating or moving.
+- Secondary type: Same heavy letterforms at smaller scale with the same RGB treatment.
+- Optional 3D extrusion: letterforms with a simple isometric extrusion in a darker shade — giving the impression of dimensional type from early 3D software.
+- Motion blur type: some words may have a horizontal or diagonal blur applied — readable but smeared.
+- Critical: Static, clean type destroys this style. All type must show evidence of motion, either through RGB separation, stretching, extrusion, or motion blur. The type should look like a frame extracted from an animation.
+
+**Color palette:**
+- Background: Bright saturated field — electric aqua `#00CCDD`, hot magenta `#FF00AA`, electric blue `#0044FF`, or neon lime `#AAFF00`
+- Shapes and elements: Contrasting saturated primaries — red, yellow, blue, white — at full saturation
+- RGB separation colors: Pure red `#FF0000`, pure green `#00FF00`, pure blue `#0000FF` — for the channel offset effect
+- Typography: White with RGB separation treatment, or solid primary color
+- No muted colors, no pastels, no neutrals — maximum saturation throughout
+
+**Texture & finish:**
+- RGB channel separation on all major elements — the defining texture of this style
+- Optional: CRT scan line overlay at very low opacity
+- Early CGI plastic surface on any 3D elements — slightly shiny, slightly wrong
+- Motion blur on elements suggesting movement direction
+- No paper grain, no film grain — this is broadcast digital
+
+**Subject transformation logic:**
+Render the subject in a stylized 3D treatment with a slightly plastic, early-CGI surface — think how objects looked in 1990s broadcast graphics: slightly too shiny, slightly too perfect, slightly wrong in a charming way. Apply RGB channel separation to the subject: create three slightly offset versions in pure red, green, and blue, overlapping to create chromatic aberration halos. Add motion blur or speed lines suggesting the subject is moving. Surround with geometric shapes (stars, circles, lightning bolts, triangles) in saturated primaries with white outlines. The entire composition should feel like it was frozen mid-animation.
+
+**Output feeling:**
+Should feel like the Saturday morning cartoon intro you watched so many times you can still hear the music. Nostalgic for a specific kind of digital optimism that existed before everything became smooth and minimal. Loud in the best possible way.
+
+---
+
+## Style 17 — Frutiger Aero
+
+**Mood:** Optimistic, clean, utopian. Feels like the default wallpaper of a world where technology delivered on every promise.
+**Best for:** Tech brands, SaaS, digital products, retro-futurist campaigns, brands signaling clarity and optimism.
+**Reference:** Kittl 2026 trend — Frutiger Aero. Early 2000s Windows XP/Vista era, Nokia advertising, airport wayfinding, glossy UI design circa 2004–2010.
+
+### Parameters
+
+**Aesthetic description:**
+The visual language of early 2000s digital optimism — glossy aqua and teal gradients, floating translucent globes and orbs, lens flares, lush grass and blue sky photography, bubble-like reflective typography, clean sans-serif wayfinding type. Originally from airport signage, tech branding, and interface design of the Windows XP/Vista era. Everything is glossy, clean, and promises a world of effortless digital connection. In 2026 this palette reads as warmly nostalgic — the future we hoped we were getting.
+
+**Subject treatment:**
+- Place the subject in or against a lush, saturated environment: bright blue sky with white clouds, green grass fields, or clean white studio with aqua gradients
+- Apply a glossy, reflective surface treatment to the subject — slight specular highlight, slight reflection beneath
+- Floating: the subject may hover slightly above its surface with a soft drop shadow — weightless, effortless
+- Surround with characteristic Frutiger Aero elements: floating orbs/bubbles, translucent lens flares, swoosh marks, small decorative spheres
+- Optional: subject embedded in or emerging from a translucent globe or lens element
+
+**Composition rules:**
+- Clean, airy, generous negative space — never crowded
+- Background: gradient sky blue or clean white studio — always light, never dark
+- Floating composition: elements feel gravity-light, hovering, effortless
+- Decorative elements: swoosh marks, bubble clusters, translucent orbs — scattered but not dense
+- Lens flares: 2–3 instances maximum, from light sources within the composition
+- Overall: feels like a product launch from 2006 that you somehow want to buy right now
+
+**Layout logic — where copy lands:**
+- Top center or top left: Brand or product name — clean, moderate scale
+- Center: Subject, floating or hovering
+- Below subject: Primary tagline or product descriptor — clean, light, optimistic language
+- Supporting copy: 2–3 short benefit statements in small clean type, left-aligned or centered
+- Bottom: URL, handle, or CTA in small clean type
+- Decorative swoosh or orb elements fill negative space organically — not placed by grid logic
+
+**Typography — visual geometry specification:**
+- Primary display: Clean, rounded sans-serif letterforms — stroke weight is medium, consistent throughout, no thick-thin variation. Corners of letterforms have a slight rounding — not perfectly square terminals. Characters are moderately wide, upright. The overall impression is friendly, clear, and slightly soft. This is the typographic language of airport wayfinding and consumer tech — trustworthy, approachable, optimistic.
+- Bubble/glossy treatment on title: The letterforms may have a glossy surface applied — a white specular highlight arc across the top of each character, creating the impression of inflated, shiny letterforms. This is the signature Frutiger Aero type treatment.
+- Supporting text: Same rounded sans at lighter weight — thin strokes, same moderate width, very legible at small sizes.
+- Critical: The rounded terminals and moderate stroke weight are essential. Heavy grotesques feel too aggressive. Geometric sans-serifs without rounding feel too cold. The softness and approachability of the letterform is what signals the era.
+
+**Color palette:**
+- Dominant: Sky blue gradient `#87CEEB` to `#4A9FD4`, OR clean white `#FFFFFF` to soft aqua `#E0F4F8`
+- Accent: Aqua/teal `#00BBCC`, translucent white orbs, soft lime green `#88CC44`
+- Typography: Deep teal `#006699` or white — never black
+- Lens flares: White to pale yellow — soft, not harsh
+- Orbs/bubbles: Translucent white with a slight aqua tint
+- No dark backgrounds, no saturated brights — everything is clean, bright, and slightly soft
+
+**Texture & finish:**
+- Glossy surfaces — slight specular highlights on all objects and type
+- Translucent elements — orbs, swooshes, lens flares with visible transparency
+- Soft drop shadows beneath floating elements — diffused, light
+- Lush photographic backgrounds (sky, grass) if used — saturated but not oversaturated
+- No grain, no distress, no roughness — everything is smooth and optimistic
+
+**Subject transformation logic:**
+Keep the subject photographic but apply three specific treatments: (1) isolate it from its background completely; (2) apply a glossy specular highlight — a white curved reflection across the upper surface of the subject, making it look slightly inflated and shiny, like a product render from 2004; (3) make it hover slightly above its surface with a soft, diffused shadow beneath suggesting weightlessness. Surround it with floating translucent orbs, swoosh marks, and lens flares. Place it against a bright aqua-to-sky-blue gradient or lush green grass and blue sky background. Everything should feel clean, light, and optimistic.
+
+**Output feeling:**
+Should feel like a promise — like the future is going to be clean and effortless and you're already living in it. The specific warmth of early 2000s technological optimism before anyone knew better. A viewer should feel slightly hopeful.
+
+---
+
+## Style 18 — Type Collage
+
+**Mood:** Chaotic-good, expressive, kinetic. Feels like a zine page that went to art school.
+**Best for:** Social content, streetwear brands, music releases, zine culture, editorial campaigns, bold brand moments.
+**Reference:** Kittl 2026 trend — Type Collage. Chrome 3D letterforms, torn magazine type, mixed-scale typography collisions, Vietnamese poster design, 90s editorial maximalism.
+
+### Parameters
+
+**Aesthetic description:**
+Typography treated as material rather than communication. Letters are torn, layered, rendered in 3D chrome or iridescent surfaces, mixed at wildly incompatible scales, collided and overlapped until they become texture. Multiple typefaces in the same composition — some flat, some dimensional, some hand-drawn, some mechanical. The page is covered: no negative space, or if there is negative space it is as deliberate as a percussion rest. Reading the type is secondary to experiencing it as a visual field.
+
+**Subject treatment:**
+- The subject is the typography — there may be no illustrative subject at all
+- If a subject photo is included: crop aggressively, place partially, let type run over and through it
+- Subject photo may be treated as a texture or background element rather than a focal point
+- Type elements may be torn from their backgrounds like magazine cutouts — white jagged edges showing
+- 3D chrome or iridescent letterforms may be the primary subject — floating, casting reflections
+
+**Composition rules:**
+- Full coverage — every area of the poster has something in it
+- No consistent grid — elements overlap, rotate, scale independently
+- At least three different type scales present simultaneously: very large (fills half the poster), medium, and very small
+- At least two different typographic registers: e.g. heavy display + hand-drawn + small body
+- Diagonal elements: at least one major text element is rotated 15–45 degrees
+- Torn paper edges: at least one element has a torn or rough-cut edge treatment
+
+**Layout logic — where copy lands:**
+- Primary title: Takes up the most space — could be broken into individual letters scattered across the composition, or stacked so each letter fills its own horizontal band
+- Secondary text: Overlaps with or runs perpendicular to the title
+- Body/detail text: Small, tucked into gaps between larger elements — the negative space is used for information
+- Date/handle: Could be set vertically up one edge, or hidden in a small block behind a larger element
+- Decorative text: Words, fragments, letters used purely as visual texture — not meant to be read first
+
+**Typography — visual geometry specification:**
+- Primary display: Multiple simultaneous type styles — this is the defining rule. Must include at least two of: (a) extremely heavy grotesque with maximum stroke weight, (b) 3D extruded or chrome letterforms with visible dimensionality and reflection, (c) hand-drawn or painted letterforms with natural stroke variation, (d) torn magazine cutout type — each character from a potentially different source, varying in weight and size.
+- Scale contrast: The largest type element should be at least 10–15x the height of the smallest type element in the same composition. This scale jump creates the collage energy.
+- Rotation: Some elements rotated — diagonal type creates movement and breaks the grid.
+- Texture on letterforms: Chrome type has specular highlights and reflections. Torn type has rough white paper edges. Hand-drawn type has visible brushwork. Each type element should feel like a different material.
+- Critical: Uniformity destroys this style. If all the type is the same weight, same size, same treatment — it reads as bad layout, not Type Collage. The deliberate incompatibility of the elements is the design.
+
+**Color palette:**
+- No fixed palette — Type Collage is defined by juxtaposition, not color harmony
+- Common approaches: (a) full color maximalism — every element in a different saturated color, (b) near-monochrome with one explosive accent, (c) black and white base with one color element (neon, chrome, or hand-colored)
+- Chrome/iridescent letterforms: holographic gradient — shifts across the spectrum
+- Background: could be a solid color, a torn paper texture, a photo fragment, or a color field — whatever serves the composition
+
+**Texture & finish:**
+- Torn paper edges on cutout elements — irregular, fibrous, white
+- Chrome/iridescent surface on 3D letterforms — reflective, holographic
+- Hand-painted texture on brush letterforms — visible bristle marks
+- Halftone or grain on photographic elements
+- Multiple textures coexisting — the material contrast is part of the aesthetic
+- No consistent finish across the whole poster — each element has its own surface quality
+
+**Subject transformation logic:**
+The subject photograph, if provided, is raw material — not a hero. Crop it aggressively to an unexpected fragment, reduce it to near-monochrome, and place it partially behind or beneath type elements. The type itself is the primary visual subject. Use at minimum three incompatible typographic treatments simultaneously: extremely heavy grotesque at massive scale, 3D chrome or iridescent letterforms, and torn paper cutout type. Scale these radically — the largest type element should be 10–15x the height of the smallest. Rotate at least one major element 15–45 degrees. Add torn paper edges to at least one element. If it still looks like a designed poster, add more incompatibility.
+
+**Output feeling:**
+Should feel like something made by someone who knows every rule and is choosing to break all of them at once — and it works because the breaking is intentional. Chaotic-good. The kind of visual that people screenshot and save without knowing exactly why.
