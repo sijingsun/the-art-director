@@ -72,6 +72,30 @@ Present the 10 styles using this format:
 
 10. Contemporary Swiss / Museum  — Off-white, neo-grotesque type, one archival photo inset, intellectual restraint.
                                    Best for: cultural events, exhibitions, galleries, design-literate brands.
+
+11. Blueprint Core               — Technical drawing language, exploded views, annotation arrows, monochrome.
+                                   Best for: tech products, engineered objects, explainer campaigns, maker culture.
+
+12. Archival Trinket             — Everyday objects arranged as museum artifacts, numbered catalog logic.
+                                   Best for: lifestyle, wellness, fashion, personal brands, seasonal campaigns.
+
+13. Punk Grunge                  — Xerox grain, torn edges, aggressive type, DIY urgency.
+                                   Best for: music, streetwear, activist campaigns, underground events.
+
+14. Future Medieval              — Gothic blackletter + digital chrome + heraldry + dark sacred energy.
+                                   Best for: nightlife, music releases, luxury fashion, gaming, NYE events.
+
+15. Surveillance Design          — CCTV overlays, bounding boxes, biometric HUDs, cold machine vision.
+                                   Best for: tech campaigns, editorial, conceptual art, identity work.
+
+16. Signal Aesthetic             — 90s TV broadcast, RGB glitch, colliding shapes, Y2K kinetic energy.
+                                   Best for: apparel, digital campaigns, podcast visuals, Y2K brands.
+
+17. Frutiger Aero                — Early 2000s glossy optimism, aqua gradients, bubble type, floating orbs.
+                                   Best for: tech, SaaS, digital products, retro-futurist brands.
+
+18. Type Collage                 — Type as material — torn, chrome, layered, colliding at incompatible scales.
+                                   Best for: social content, streetwear, zine culture, bold brand moments.
 ```
 
 Ask the user to pick one, or describe a mood and match them to the closest profile before confirming.
@@ -82,42 +106,70 @@ Ask the user to pick one, or describe a mood and match them to the closest profi
 
 ## Prompt Assembly
 
+**This is the most important section. Read it fully before writing any prompt.**
+
+The reason well-crafted prompts work is not because they describe visuals — it's because they define a **design system** and a **transformation logic**. You are directing a junior designer, not describing a picture. Every section below serves a distinct purpose. Do not collapse or merge them.
+
 Load the chosen style profile from `references/styles.md`. Substitute every placeholder from the style profile and user intake. No placeholders in the final output.
 
+### The 7-Section Prompt Structure
+
+Each assembled prompt must follow this structure exactly, in this order:
+
 ```
-Create a [STYLE_NAME] [FORMAT] using the uploaded [SUBJECT_TYPE] image as the main subject.
+**1. GOAL**
+Create a [STYLE_NAME] poster using the uploaded [SUBJECT_TYPE] as the main subject.
 [If no image: "No reference image — this is a typography-only composition."]
-[If Chromatic Blur: "Use the uploaded image as raw material to be abstracted into a soft, painterly color wash background."]
+[If Chromatic Blur: "Use the uploaded image as raw material — abstract it into a soft color wash background. The image itself must not be recognizable."]
 
-**Content:**
-Primary title: [PRIMARY_TITLE]
-Subtitle: [SUBTITLE]
-Supporting copy: [ALL_SUPPORTING_COPY]
+Content to include:
+- Primary title: [PRIMARY_TITLE]
+- Subtitle: [SUBTITLE]
+- Supporting copy: [ALL_SUPPORTING_COPY]
 
-**Style:**
-[AESTHETIC_DESCRIPTION]
+---
 
-**Subject treatment:**
-[SUBJECT_TREATMENT_INSTRUCTIONS]
+**2. STYLE DEFINITION**
+[AESTHETIC_DESCRIPTION from style profile — the design world this belongs to, specific references, era, cultural context. Be precise. Vague style direction produces generic output.]
 
-**Composition:**
-[COMPOSITION_RULES]
+---
+
+**3. SUBJECT TRANSFORMATION** ← most critical section
+[SUBJECT_TRANSFORMATION_LOGIC from style profile — exactly what to DO to the uploaded image: what abstraction level, what to simplify, what to keep, what to exaggerate, what rendering style to force. This is what separates a designed output from a photo with text on it. Without explicit transformation instructions, the model defaults to photorealistic and over-detailed.]
+
+---
+
+**4. COMPOSITION**
+[COMPOSITION_RULES from style profile — where the subject sits, how much space it occupies, what structural zones exist, what the negative space logic is]
 
 **Layout — where copy lands:**
-[LAYOUT_LOGIC — map each piece of user copy to its position and typographic treatment]
+[LAYOUT_LOGIC — map each piece of user copy to its exact position and typographic treatment. Every text element provided by the user must be placed.]
 
-**Typography:**
-[TYPOGRAPHY_REGISTER]
+---
 
-**Color:**
-[COLOR_PALETTE]
+**5. TYPOGRAPHY**
+[TYPOGRAPHY_GEOMETRY_SPEC from style profile — use the full visual geometry description verbatim. Do not substitute font names. Describe stroke weight ratios, letterform proportions, spacing behavior, and how type relates to the frame.]
 
-**Texture & finish:**
-[TEXTURE_TREATMENT]
+---
 
-**Output:**
-High-resolution. [OUTPUT_NOTES]
+**6. COLOR CONSTRAINTS**
+[COLOR_PALETTE from style profile — list every color with hex value and what it applies to. Explicit constraints prevent the model from introducing colors not in the system.]
+
+---
+
+**7. TEXTURE + OUTPUT FEELING**
+[TEXTURE_TREATMENT from style profile]
+
+[OUTPUT_FEELING from style profile — what this should feel like, not just look like. This is the taste nudge. "Should feel like it was pulled off a press in 1965 Osaka" is more useful than "high resolution poster".]
 ```
+
+### Key principles when assembling
+
+- **Separate every concern.** Style, transformation, composition, type, color, and texture are different instructions. Mixing them makes the model prioritize unpredictably.
+- **Subject transformation is the biggest lever.** If the output looks like a photo with text on it, the transformation section wasn't strong enough. Add: *"This is not a photograph. The subject must be rendered as [illustration style]. Remove all photographic realism."*
+- **Color constraints prevent drift.** Always list explicit hex values and what each applies to. Without this, the model introduces colors not in the system.
+- **The output feeling section is a taste nudge, not a quality note.** "High resolution" tells the model nothing. "Feels like it was xeroxed three times and wheat-pasted on a telephone pole in 1979" gives it a target to aim at.
+- **If the first generation misses:** Identify which section failed. Re-run with that section strengthened. Change one variable at a time — this is how designers actually iterate.
 
 ---
 
