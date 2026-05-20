@@ -8,6 +8,280 @@ Each profile defines the full parameter set for the master prompt template in SK
 
 **Critical instruction on output feeling:** The "Output feeling" section is a taste nudge, not a quality note. "High resolution" tells the model nothing useful. "Should feel like it was pulled off a press in 1965 Osaka" gives it a target. Always include this section verbatim at the end of every prompt.
 
+## Style Cards for Guided Mode
+
+Use these cards when helping non designers browse styles. These are simplified entry points. After the user chooses a style, load the full profile below.
+
+### 1. Japanese Retro Print
+Simple description:
+A bold vintage Japanese food poster look with flat colors, clean shapes, and nostalgic print texture.
+
+Best starting point for:
+Food, restaurants, cultural events, origin stories.
+
+Beginner customization options:
+1. More minimalist
+2. More vintage
+3. More premium
+4. More playful
+5. More authentic food stall
+6. More bold social cover
+
+### 2. Mid Century Editorial
+Simple description:
+A quiet luxury magazine poster with elegant type, muted color, and a refined product focus.
+
+Best starting point for:
+Products, objects, lamps, furniture, limited editions, design launches.
+
+Beginner customization options:
+1. More luxurious
+2. More minimal
+3. More nostalgic
+4. More gallery like
+5. More product focused
+6. More warm and tactile
+
+### 3. Neo Expressionist Event
+Simple description:
+A raw cultural event poster with bold color blocks, expressive illustration, and high energy.
+
+Best starting point for:
+Concerts, festivals, club nights, cultural events.
+
+Beginner customization options:
+1. More chaotic
+2. More structured
+3. More painterly
+4. More street poster
+5. More colorful
+6. More underground
+
+### 4. Chromatic Blur / Aura
+Simple description:
+A dreamy abstract color wash where the typography carries the message.
+
+Best starting point for:
+Quotes, brand mood pieces, campaign manifestos, music visuals.
+
+Beginner customization options:
+1. More dreamy
+2. More emotional
+3. More minimal
+4. More colorful
+5. More soft and poetic
+6. More bold typography
+
+### 5. Retro Cartoon Maximalist
+Simple description:
+A dense illustrated poster full of icons, characters, bold outlines, and merch drop energy.
+
+Best starting point for:
+Sports, street culture, city pride, merch, pop culture.
+
+Beginner customization options:
+1. More playful
+2. More crowded
+3. More character driven
+4. More streetwear
+5. More colorful
+6. More sticker like
+
+### 6. 70s Psychedelic Folk
+Simple description:
+A warm handmade landscape poster with symmetrical illustration, nature motifs, and folk festival feeling.
+
+Best starting point for:
+Outdoor events, wellness brands, music festivals, nature themes.
+
+Beginner customization options:
+1. More nature focused
+2. More warm
+3. More mystical
+4. More handmade
+5. More symmetrical
+6. More vintage festival
+
+### 7. Chalk and Crayon Naïf
+Simple description:
+A deliberately rough hand drawn poster with playful line art and casual confidence.
+
+Best starting point for:
+Art events, parties, indie brands, creative studios.
+
+Beginner customization options:
+1. More playful
+2. More rough
+3. More childlike
+4. More minimal
+5. More handmade
+6. More cool art party
+
+### 8. Typographic Sculpture
+Simple description:
+A bold type only poster where the words become the whole visual.
+
+Best starting point for:
+Manifestos, talks, brand values, bold statements.
+
+Beginner customization options:
+1. More bold
+2. More minimal
+3. More serious
+4. More playful line breaks
+5. More studio poster
+6. More keynote backdrop
+
+### 9. Dark Fashion Editorial
+Simple description:
+A cinematic luxury campaign look with moody photography, grain, shadow, and structured type.
+
+Best starting point for:
+Fashion, beauty, luxury launches, portrait campaigns.
+
+Beginner customization options:
+1. More cinematic
+2. More luxury
+3. More mysterious
+4. More portrait focused
+5. More dramatic lighting
+6. More clean campaign
+
+### 10. Contemporary Swiss / Museum
+Simple description:
+A clean museum poster with huge typography, restrained layout, and an archival image inset.
+
+Best starting point for:
+Exhibitions, galleries, cultural events, design literate brands.
+
+Beginner customization options:
+1. More gallery like
+2. More minimal
+3. More modern tech
+4. More editorial
+5. More bold title
+6. More warm and tactile
+
+### 11. Blueprint Core
+Simple description:
+A technical drawing poster with exploded views, annotations, measurement lines, and engineering precision.
+
+Best starting point for:
+Tech products, engineered objects, explainer campaigns, maker culture.
+
+Beginner customization options:
+1. More technical
+2. More diagrammatic
+3. More playful labels
+4. More product manual
+5. More precise
+6. More white blueprint
+
+### 12. Archival Trinket
+Simple description:
+A curated object catalog where everyday items feel like personal museum artifacts.
+
+Best starting point for:
+Lifestyle, wellness, fashion, personal brands, seasonal campaigns.
+
+Beginner customization options:
+1. More nostalgic
+2. More personal
+3. More museum catalog
+4. More soft and feminine
+5. More minimal
+6. More object dense
+
+### 13. Punk Grunge
+Simple description:
+A raw Xerox zine poster with torn paper, distressed type, grain, and DIY urgency.
+
+Best starting point for:
+Music, streetwear, activist campaigns, underground events.
+
+Beginner customization options:
+1. More aggressive
+2. More torn paper
+3. More zine
+4. More black and white
+5. More chaotic
+6. More street poster
+
+### 14. Future Medieval
+Simple description:
+A gothic digital poster with blackletter, chrome, heraldry, and dark sacred energy.
+
+Best starting point for:
+Nightlife, music releases, luxury fashion, gaming, dramatic events.
+
+Beginner customization options:
+1. More gothic
+2. More chrome
+3. More luxury
+4. More sacred
+5. More dark fantasy
+6. More club poster
+
+### 15. Surveillance Design
+Simple description:
+A cold machine vision poster with CCTV overlays, bounding boxes, biometric UI, and system labels.
+
+Best starting point for:
+Tech campaigns, identity work, privacy themes, conceptual fashion.
+
+Beginner customization options:
+1. More CCTV
+2. More biometric
+3. More cold tech
+4. More red warning
+5. More data dense
+6. More conceptual
+
+### 16. Signal Aesthetic
+Simple description:
+A kinetic 90s broadcast graphic look with RGB glitches, colliding shapes, and Y2K motion energy.
+
+Best starting point for:
+Apparel, digital campaigns, podcast visuals, Y2K brands.
+
+Beginner customization options:
+1. More glitch
+2. More broadcast
+3. More colorful
+4. More kinetic
+5. More Y2K
+6. More digital poster
+
+### 17. Frutiger Aero
+Simple description:
+A glossy early 2000s future look with aqua gradients, floating orbs, shine, and soft optimism.
+
+Best starting point for:
+Tech, SaaS, digital products, retro futurist brands.
+
+Beginner customization options:
+1. More glossy
+2. More optimistic
+3. More aqua
+4. More floating objects
+5. More retro tech
+6. More clean and soft
+
+### 18. Type Collage
+Simple description:
+A chaotic typography poster where letters become material through layering, tearing, chrome, and scale collisions.
+
+Best starting point for:
+Social content, streetwear, music releases, zine culture, bold brand moments.
+
+Beginner customization options:
+1. More chaotic
+2. More chrome
+3. More layered
+4. More streetwear
+5. More editorial
+6. More social cover
+
 ---
 
 ## Style Index
