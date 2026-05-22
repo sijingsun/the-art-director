@@ -314,8 +314,13 @@ Beginner customization options:
 **Mood:** Proud, graphic, culturally specific. Feels handcrafted but bold.
 **Best for:** Food, restaurants, cultural events, product origin stories.
 **Reference:** Okiboru House of Udon poster.
+**Reference image:** `references/images/style-01-japanese-retro-print.jpg`  
+Public URL: https://sijingsun.github.io/the-art-director/references/images/style-01-japanese-retro-print.jpg
 
 ### Parameters
+
+**Reference anatomy lock:**
+This is a single printed poster page. Centered illustration with title above, vertical Japanese-character text down the left side, small descriptor at bottom left, establishment label at bottom right, optional stamp/seal in the lower corner. The full poster sits inside a thin inset red rectangular border. The energy is a proud food-stall print, not an advertisement. This is NOT a product photograph with text overlaid, NOT a modern restaurant flyer, NOT a brand-deck slide, NOT a Canva template, NOT a digital UI screen, NOT a swatch board, NOT a website hero image. The misregistration and halftone are evidence of the printing process — they must remain visible.
 
 **Aesthetic description:**
 Vintage Japanese graphic poster aesthetic with a strictly limited 2–3 color palette (deep blue, warm red, off-white background). Mid-century Japanese print design — bold shapes, clean linework, slight print texture. Feels like a screen-printed food stall poster from 1960s Japan. No photography, no gradients, no realism.
@@ -368,6 +373,9 @@ This is not a photograph. Take the uploaded image and convert it into a flat gra
 **Output feeling:**
 Should feel like it was pulled off a letterpress in 1965 Osaka — graphic, proud, and slightly imperfect. The misregistration and halftone texture are not decoration, they are proof of the printing process. A viewer should want to frame this.
 
+**Negative prompts (anti-drift):**
+No photographic subject — the illustration must be flat duotone. No gradients, no realistic lighting, no drop shadows beyond the flat blue oval. No modern restaurant menu look. No commercial product photography. No QR codes. No brand-deck framing. No swatch grids. No vector-clean perfectly crisp edges — the print imperfection is the point.
+
 ---
 
 ## Style 2 — Mid-Century Editorial
@@ -375,8 +383,13 @@ Should feel like it was pulled off a letterpress in 1965 Osaka — graphic, prou
 **Mood:** Refined, quietly luxurious, slightly nostalgic.
 **Best for:** Products, objects, lamps, furniture, limited-edition goods, design launches.
 **Reference:** Modern Light lamp editorial poster.
+**Reference image:** `references/images/style-02-mid-century-editorial.jpg`  
+Public URL: https://sijingsun.github.io/the-art-director/references/images/style-02-mid-century-editorial.jpg
 
 ### Parameters
+
+**Reference anatomy lock:**
+This is a single editorial page from a 1972 design magazine. The subject sits bottom-center against a dusty blue field, slightly overlapping a large display title above it. A tiny collection label whispers at the very top center. A large numeral or time on the left and a date or edition label on the right flank the title, each with a small horizontal rule and a 2–3 word descriptor beneath. Optional bottom-center decorative symbol. Gallery-like emptiness; maximum 6–7 text elements total. This is NOT an e-commerce product ad, NOT a sale poster, NOT a loud luxury brand banner, NOT a deck cover slide, NOT a marketplace listing. The poster argues through restraint.
 
 **Aesthetic description:**
 Mid-century modern print aesthetic. Muted duotone palette — dusty blue or faded teal background, warm off-white typography. Subtle film grain, paper texture, and slight fading mimic aged print. Editorial and gallery-like — never commercial or loud. Feels like a page from a 1972 design magazine.
@@ -430,6 +443,9 @@ Isolate the subject from its background entirely — no environment, no context,
 **Output feeling:**
 Should feel like tearing a page from a 1972 design magazine and finding it was better than anything being made today. Quiet confidence. The kind of poster that doesn't need to be loud because it knows it's right.
 
+**Negative prompts (anti-drift):**
+No price tag, no 'buy now' or CTA copy, no shopping context. No oversaturated product photography. No medium-weight type — every text element is either very heavy display or near-invisible thin. No background environment around the subject — strict isolation. No bright accent colors. No pure-white background. No modern app/UI framing. No marketing badges or sale callouts.
+
 ---
 
 ## Style 3 — Neo-Expressionist Event
@@ -437,8 +453,13 @@ Should feel like tearing a page from a 1972 design magazine and finding it was b
 **Mood:** Raw, energetic, culturally alive. Feels like it was wheat-pasted on a wall in Berlin.
 **Best for:** Concerts, club nights, boutique festivals, cultural events, artist showcases.
 **Reference:** Cape Kablys "Prologue" festival poster.
+**Reference image:** `references/images/style-03-neo-expressionist-event.jpg`  
+Public URL: https://sijingsun.github.io/the-art-director/references/images/style-03-neo-expressionist-event.jpg
 
 ### Parameters
+
+**Reference anatomy lock:**
+This is a wheat-pasted event poster. Three strict horizontal bands: a solid-color title header (top ~25%) with massive wide heavy letterforms filling edge to edge, a painterly illustration field (middle ~50%) bleeding to the edges within its band, and a white/off-white footer strip (bottom ~25%) with performer names and details. The header and illustration touch with no padding. Date and venue identifier sit in the top-right corner of the header. Performer billing hierarchy lives in the footer with mixed sizes. This is NOT a clean product ad, NOT a tech conference poster, NOT a corporate keynote backdrop, NOT a luxury campaign, NOT a vector-perfect digital illustration. The illustration must feel hand-painted with intentional looseness.
 
 **Aesthetic description:**
 Contemporary European event poster aesthetic. Bold horizontal color blocking creates distinct zones (header band, illustration field, footer strip). Painterly, gestural illustration style — loose brushwork, expressive figures, almost Basquiat-influenced but constrained by a structured grid. Saturated, clashing primaries. Thick black outlines. Feels both raw and designed — intentional chaos within a system.
@@ -493,6 +514,9 @@ This is not a photograph. Convert the subject or any figures into gestural, pain
 **Output feeling:**
 Should feel like it was designed at 2am by someone who has very good taste and very strong opinions. Raw but not accidental. The kind of poster people photograph on the street.
 
+**Negative prompts (anti-drift):**
+No photorealism. No vector-clean illustration. No precision rendering of figures. No padding around the illustration within its band. No gradient backgrounds. No corporate brand restraint. No 4-color clean print look — the riso/halftone slight irregularity is essential. No script display fonts. No condensed display fonts in the header — width is the typographic personality.
+
 ---
 
 ## Style 4 — Chromatic Blur / Aura
@@ -500,8 +524,13 @@ Should feel like it was designed at 2am by someone who has very good taste and v
 **Mood:** Atmospheric, emotional, immersive. Feels like a feeling more than a thing.
 **Best for:** Brand mood pieces, campaign manifestos, quote visuals, music releases, emotional launches.
 **Reference:** "Limits You" typographic aura poster.
+**Reference image:** `references/images/style-04-chromatic-blur.jpg`  
+Public URL: https://sijingsun.github.io/the-art-director/references/images/style-04-chromatic-blur.jpg
 
 ### Parameters
+
+**Reference anatomy lock:**
+This is a typographic quote poster — a full-bleed soft-focus color field with stacked centered all-caps copy in the upper-to-middle area and one expressive script climax line in the lower-middle. Tiny footer mark only if needed. The background is unrecognizable as any specific image — only color, light, and atmosphere. This is NOT a product mockup, NOT a device or app screen, NOT a dashboard, NOT a UI card, NOT a brand-guideline page, NOT a palette swatch grid, NOT a logo lockup sheet, NOT a slide layout, NOT a marketing landing-page hero, NOT a presentation board. The image must feel like a poster you'd frame for the feeling it makes, not a piece of marketing collateral.
 
 **Aesthetic description:**
 Contemporary digital-meets-analog aesthetic. The background is a full-bleed abstract color wash — extreme out-of-focus photography or painterly color field, completely unrecognizable as a specific image. No subject illustration. No borders. The typography floats as the only structured element, making it the entire visual argument. Feels like 2023–2025 digital art direction — emotional, abstract, typography-forward.
@@ -548,6 +577,9 @@ If an image is uploaded: apply extreme defocus blur until no recognizable form o
 **Output feeling:**
 Should feel like a feeling, not a thing. The viewer should experience the emotion of the copy before they finish reading it. If someone could explain what the background image is, it hasn't been abstracted enough.
 
+**Negative prompts (anti-drift):**
+No app mockup, no device, no phone, no laptop, no dashboard, no UI cards, no rounded-square icon presentation, no brand-guideline page, no palette swatch grid, no logo lockup sheet, no wellness cliché (no lotus, no person meditating, no heart-rate line, no zen stones), no glassmorphism panel, no scientific HUD, no product packshot, no border or frame, no recognizable shape in the background layer, no sharp focal subject.
+
 ---
 
 ## Style 5 — Retro Cartoon Maximalist
@@ -555,8 +587,13 @@ Should feel like a feeling, not a thing. The viewer should experience the emotio
 **Mood:** Energetic, celebratory, city-proud. Feels like a limited-edition merch drop.
 **Best for:** Sports events, street culture, city celebrations, Latin-inspired events, cultural nights, merch posters.
 **Reference:** Brooklyn Nets "La Manera de Brooklyn" Noche Latina poster.
+**Reference image:** `references/images/style-05-retro-cartoon-maximalist.jpg`  
+Public URL: https://sijingsun.github.io/the-art-director/references/images/style-05-retro-cartoon-maximalist.jpg
 
 ### Parameters
+
+**Reference anatomy lock:**
+This is a screen-printed merch poster: solid black background bleeding to all edges, massive bubbly display title at top center, secondary large display text at bottom center (nearly title-scale), 8–12 illustrated icons filling the entire middle field with no negative space, sponsor or logo lockups in the bottom corners, and a small condensed-type date/details strip at the very bottom. Every inch of the field is accountable — gaps get filled with icons. This is NOT a minimal logo design, NOT a corporate sports brand layout, NOT a clean infographic, NOT a children's book illustration, NOT a single-character cartoon, NOT a streetwear product photo. It is a dense maximal merch poster.
 
 **Aesthetic description:**
 Dense, joyful illustration maximalism. Black background. Every inch of space filled with flat illustrated icons, characters, and environmental elements. Bold primary colors with thick white outlines on every element. Chunky bubbly display type. Feels like 1970s–80s Latin American graphic design filtered through contemporary streetwear illustration. Nothing is subtle — everything is at maximum.
@@ -610,6 +647,9 @@ Do not use the uploaded photograph directly. Translate the subject into the flat
 **Output feeling:**
 Should feel like a limited-edition screen print you'd buy at a stadium merch table and immediately regret not buying two of. Maximum energy. Zero restraint. Every inch of space is accountable.
 
+**Negative prompts (anti-drift):**
+No empty space. No minimal design. No 3D rendered characters. No soft pastel palette. No gradient fills inside icons — flat color only. No drop shadows on icons. No thin outlines — only thick consistent white outlines. No realistic mascot photography. No corporate jersey look. No brand-deck logo grid. No isolated single-icon composition.
+
 ---
 
 ## Style 6 — 70s Psychedelic Folk
@@ -617,8 +657,13 @@ Should feel like a limited-edition screen print you'd buy at a stadium merch tab
 **Mood:** Warm, communal, handcrafted. Feels like a poster you'd frame in a mountain cabin.
 **Best for:** Outdoor music festivals, amphitheater seasons, nature brands, wellness retreats, folk or jam band events.
 **Reference:** Gerald R. Ford Amphitheater 2025 Concert Season poster.
+**Reference image:** `references/images/style-06-70s-psychedelic-folk.jpg`  
+Public URL: https://sijingsun.github.io/the-art-director/references/images/style-06-70s-psychedelic-folk.jpg
 
 ### Parameters
+
+**Reference anatomy lock:**
+This is a national park / amphitheater concert poster, near-symmetrical: tiny presenter label at the very top, primary title contained inside a shaped banner or pill at the top, subtitle below the banner, central illustrated landscape scene (mountains, sun, trees, animals, botanical details) occupying the middle 60%, a curved ribbon or arch element carrying a location name through the illustration, and a contrasting-ground footer strip with multi-column small condensed lineup/dates/times. Decorative botanical or celestial marks fill the corners. Everything is hand-drawn illustration — no photography. This is NOT a vector tech illustration, NOT a clean modern festival flyer, NOT a children's storybook page, NOT a generic stock landscape, NOT a digital flat-design poster.
 
 **Aesthetic description:**
 Warm illustrated landscape poster tradition — equal parts Grateful Dead concert poster, vintage national park print, and 1970s folk album cover. Symmetrical or near-symmetrical central scene built entirely from hand-drawn illustration. Warm amber, teal, and orange palette. Organic rounded shapes throughout — no hard geometry. Decorative botanical, celestial, and natural motifs fill every corner. Friendly rounded serif display type with outline strokes.
@@ -672,6 +717,9 @@ Do not use the photograph directly. Translate the subject and its context into a
 **Output feeling:**
 Should feel like a poster you'd find rolled up in a vintage shop and immediately buy for your cabin wall. Warm, specific, and made with love. The kind of thing people keep for 40 years.
 
+**Negative prompts (anti-drift):**
+No photography. No vector clean digital illustration. No modern minimalist design. No generic landscape elements — every detail must be subject-specific. No cool color dominance — palette must tilt warm. No thin modern serifs or sans-serifs for the title. No drop shadows, no gradients within shapes. No 3D rendered nature elements. No clean asymmetric grid.
+
 ---
 
 ## Style 7 — Chalk & Crayon Naïf
@@ -679,8 +727,13 @@ Should feel like a poster you'd find rolled up in a vintage shop and immediately
 **Mood:** Playful, energetic, deliberately imperfect. Feels made by a very cool person who chose not to make it perfect.
 **Best for:** Art events, gallery openings, parties, indie brands, creative studios, underground events.
 **Reference:** Art Party event poster.
+**Reference image:** `references/images/style-07-chalk-crayon-naif.jpg`  
+Public URL: https://sijingsun.github.io/the-art-director/references/images/style-07-chalk-crayon-naif.jpg
 
 ### Parameters
+
+**Reference anatomy lock:**
+This is a hand-made art-party flyer on near-white paper. A chunky hand-drawn display title at the top with a slightly uneven baseline, an inline date in parentheses, a single gestural one-line crayon figure occupying most of the poster height running from mid-poster downward, floating handwritten time and key-detail copy beside the figure, and tiny utilitarian straight-type address/handle at the bottom corners. Two colors total. Nothing is perfectly aligned. This is NOT a Canva flyer, NOT a children's book page, NOT a kindergarten-style illustration, NOT a clean modern poster, NOT a vector logo design, NOT a polished brand campaign. The roughness is the design statement.
 
 **Aesthetic description:**
 Deliberately rough, childlike aesthetic — but with taste. Chunky hand-drawn display type. Single gestural line-art illustration in crayon or pastel texture. Extreme color limitation: two colors maximum on a near-white ground. Mixed typographic registers: bold chunky display for the title, casual handwritten script for secondary copy. The roughness is the design statement.
@@ -733,6 +786,9 @@ Do not use the photograph directly. Translate the subject into a single gestural
 **Output feeling:**
 Should feel like it was made at midnight by someone who is very talented and completely unbothered by perfection. Casual confidence. The roughness is the point — if it looks too clean, it's failed.
 
+**Negative prompts (anti-drift):**
+No clean digital lettering. No vector-perfect line work. No three-or-more colors. No background environment, no scenery, no shading inside the figure. No drop shadows or gradients. No perfect alignment. No corporate or kid's-product polish. No symmetry. No Canva template grid. No emoji-style illustration.
+
 ---
 
 ## Style 8 — Typographic Sculpture
@@ -740,8 +796,13 @@ Should feel like it was made at midnight by someone who is very talented and com
 **Mood:** Declarative, confident, ideological. Feels like a manifesto printed on a wall.
 **Best for:** Company culture, brand values, keynote backdrops, design manifestos, conference talks, editorial campaigns.
 **Reference:** GitHub "demos not memos" poster.
+**Reference image:** `references/images/style-08-typographic-sculpture.jpg`  
+Public URL: https://sijingsun.github.io/the-art-director/references/images/style-08-typographic-sculpture.jpg
 
 ### Parameters
+
+**Reference anatomy lock:**
+This is a type-only manifesto poster. Dark near-black background; the primary message broken into 4–6 lines of massive lowercase ultra-heavy grotesque, left-aligned, filling 70–80% of the poster width; at most 2–3 small body-copy statements floating at natural negative-space intersections (upper-left of type, mid-right of type, optional lower-left). No illustration, no photography, no decorative marks, no rules, no borders, no footer. The line breaks of the display copy ARE the editorial. This is NOT a presentation slide, NOT a generic quote graphic for social media, NOT a brand-deck cover, NOT a product ad, NOT a billboard with imagery. It is a manifesto printed on a wall.
 
 **Aesthetic description:**
 The typography IS the image. No illustration, no photography, no supporting visual elements. Massive-weight grotesque type at extreme scale, lowercase, filling the poster as pure sculptural form. Type breaks columns, extends close to edges, treats letterforms as architectural mass. Small body copy floats at grid intersections as the only relief. Design argument made entirely through weight, scale contrast, and spatial tension.
@@ -788,6 +849,9 @@ No subject image. The copy provided by the user IS the subject. The typographic 
 **Output feeling:**
 Should feel like someone had a very strong opinion and printed it on a wall. Authoritative without being aggressive. The kind of thing a design studio frames in their lobby and means it.
 
+**Negative prompts (anti-drift):**
+No illustration, no photography, no icons, no decorative shapes, no logos, no rules, no borders, no background imagery, no gradients. No uppercase display type — lowercase only. No medium-weight type — only ultra-heavy display and very light/regular small body. No bright background. No multiple colors — single accent color used at most once.
+
 ---
 
 ## Style 9 — Dark Fashion Editorial
@@ -795,8 +859,13 @@ Should feel like someone had a very strong opinion and printed it on a wall. Aut
 **Mood:** Cinematic, mysterious, high-stakes. Feels like a scene from a film you want to be in.
 **Best for:** Fashion launches, beauty campaigns, luxury product releases, portrait-forward campaigns, music artist profiles.
 **Reference:** "The Sculpt Blazer" Larana Inc. fashion editorial poster.
+**Reference image:** `references/images/style-09-dark-fashion-editorial.jpg`  
+Public URL: https://sijingsun.github.io/the-art-director/references/images/style-09-dark-fashion-editorial.jpg
 
 ### Parameters
+
+**Reference anatomy lock:**
+This is a moody fashion-campaign poster — A24 film poster crossed with luxury editorial. Full-bleed photographic background with deep saturated color grade and heavy grain. Partial obscuring of the subject through shadow or lens blur is mandatory. A subtle rounded-corner frame on the entire poster. Brand name at top-left (tiny), product category at top-right (tiny), optional small circle mark at top center. Primary product/subject name as a 2–3-line bold condensed block in the lower-left; 2–3 metadata blocks right-aligned in the lower-right with small horizontal rules or circle separators between items. Bottom footer strip carries social handle, URL, CTA. This is NOT a clean e-commerce product photo, NOT a bright lifestyle ad, NOT a stock fashion photo, NOT a magazine spread layout, NOT a billboard.
 
 **Aesthetic description:**
 Full-bleed moody photography — deep, saturated background tones (crimson, noir black, forest, ink), heavy film grain, slight lens blur or glow at subject edges. Dramatic directional light — partial obscuring of the face or form is intentional mystery. Typography as a structured grid overlay: bold condensed block on one side, smaller metadata on the other. Feels like an A24 film poster crossed with a luxury fashion campaign.
@@ -853,6 +922,9 @@ Keep the photograph but apply three transformations: (1) color grade — push th
 **Output feeling:**
 Should feel like you walked into a room and someone important was there. High stakes. The kind of campaign image that makes you stop scrolling. Cinematic confidence without trying.
 
+**Negative prompts (anti-drift):**
+No bright lighting. No retouched perfect skin. No clean white studio backgrounds. No oversaturated colors outside the grade. No clip-art or sticker treatment. No vector illustration. No grid of product shots. No price overlays. No 'shop now' or commerce CTAs. No conventional headshot framing — the obscuring is essential.
+
 ---
 
 ## Style 10 — Contemporary Swiss / Museum
@@ -860,8 +932,13 @@ Should feel like you walked into a room and someone important was there. High st
 **Mood:** Intellectual, considered, quietly confident. Feels like an invitation from a place that doesn't need to impress you.
 **Best for:** Art exhibitions, cultural festivals, gallery openings, design conferences, museum events.
 **Reference:** Studio Air spring collection exhibition poster / Art Festival poster.
+**Reference image:** `references/images/style-10-contemporary-swiss-museum.jpg`  
+Public URL: https://sijingsun.github.io/the-art-director/references/images/style-10-contemporary-swiss-museum.jpg
 
 ### Parameters
+
+**Reference anatomy lock:**
+This is a museum/gallery announcement poster. Warm off-white full-bleed ground. Massive lowercase neo-grotesque title at the top, left-aligned, filling 30–40% of the poster height edge-to-edge. A small body-copy block (3–5 lines, justified or left-aligned) sits between the title and a contained rectangular photo inset in the middle-lower zone. 2–4 tiny plus or 4-pointed star marks scattered at grid intersections. Footer carries hours/dates on the bottom-left and a URL or handle on the bottom-right, both small with alternating bold/regular weights. There is NO medium-sized type — the jump from massive display to tiny body is abrupt. This is NOT a brand campaign, NOT a billboard, NOT a tech product launch, NOT a magazine cover, NOT a flat-design template.
 
 **Aesthetic description:**
 Contemporary interpretation of Swiss International Style. Warm off-white background. Massive lowercase neo-grotesque type at the top, bleeding toward edges. One photograph inset as a contained rectangular block — treated as document, not hero image. Small justified body copy. Tiny plus marks or 4-pointed stars as the only ornamentation. Intellectual, museum-adjacent. Feels like something MoMA would mail you.
@@ -917,6 +994,9 @@ Convert the photograph into a contained rectangular inset — crop it to a horiz
 **Output feeling:**
 Should feel like an invitation from somewhere that doesn't need to impress you. Considered, precise, and completely sure of itself. The kind of design that gets better the longer you look at it.
 
+**Negative prompts (anti-drift):**
+No medium-sized type anywhere. No uppercase title — lowercase only. No bright background. No full-bleed photograph — the photo must be a contained rectangle. No decorative ornamentation beyond the small plus/star marks. No drop shadows, no gradients. No script type. No multiple accent colors — at most one institutional accent used once. No marketing CTA copy.
+
 ---
 
 ## Style 11 — Blueprint Core
@@ -924,8 +1004,13 @@ Should feel like an invitation from somewhere that doesn't need to impress you. 
 **Mood:** Precise, witty, engineered. Feels like a product manual that became art.
 **Best for:** Tech products, food/object deconstructions, engineered goods, explainer campaigns, maker culture.
 **Reference:** Kittl 2026 trend — Blueprint Design. Isometric typography posters, Vancouver Maker Faire, exploded ramen schematics.
+**Reference image:** `references/images/style-11-blueprint-core.jpg`  
+Public URL: https://sijingsun.github.io/the-art-director/references/images/style-11-blueprint-core.jpg
 
 ### Parameters
+
+**Reference anatomy lock:**
+This is a technical drafting sheet — engineering documentation as poster. Background is solid deep blueprint blue or warm cream/white with a fine drafting-paper grid overlay across the entire field. Central exploded or isometric illustration of the subject with components pulled apart in space, connected by leader lines to monospaced component labels. Dimension arrows with measurement numbers, numbered callout circles referencing a legend. A title block in the bottom-right corner carries title, subtitle, date, and version/scale notation. All elements rendered in a single contrasting line color (white-on-blue OR blue-on-white) with zero fills. This is NOT a tech product ad, NOT a startup landing-page hero, NOT a 3D rendered product, NOT a children's diagram, NOT a colorful infographic.
 
 **Aesthetic description:**
 Technical drawing aesthetic borrowed from engineering workshops and architect offices. Hyper-detailed annotation language — dimension arrows, measurement labels, exploded views, cross-section diagrams, isometric projections — applied to any subject as pure graphic play. Monochromatic: white linework on deep blue, or blue linework on white/cream. Every element feels documented and considered. Over-explaining is the aesthetic — the subject becomes more interesting because it has been taken apart and labeled.
@@ -978,6 +1063,9 @@ Do not use the photograph directly. Translate the subject into a technical illus
 **Output feeling:**
 Should feel like the most considered product description ever made. Witty and precise in equal measure. The kind of poster that rewards reading every small label — and they should all say something worth reading.
 
+**Negative prompts (anti-drift):**
+No color fills inside illustrations. No more than one ink color besides the background. No display fonts — every text element is monospaced. No drop shadows, no gradients, no photographic textures. No bright marketing copy. No CTA buttons. No 3D rendered surfaces with light. No varying stroke weights — strokes must be uniform throughout.
+
 ---
 
 ## Style 12 — Archival Trinket
@@ -985,8 +1073,13 @@ Should feel like the most considered product description ever made. Witty and pr
 **Mood:** Nostalgic, curated, quietly personal. Feels like someone's most meaningful drawer emptied onto a museum sheet.
 **Best for:** Lifestyle brands, wellness, personal fashion, small businesses, seasonal campaigns, object-based storytelling.
 **Reference:** Kittl 2026 trend — Trinket Design. Museum catalog sheets, "what's in my bag" Pinterest aesthetics, scrapbook object arrangements.
+**Reference image:** `references/images/style-12-archival-trinket.jpg`  
+Public URL: https://sijingsun.github.io/the-art-director/references/images/style-12-archival-trinket.jpg
 
 ### Parameters
+
+**Reference anatomy lock:**
+This is a museum catalog sheet of personal artifacts. Neutral warm-cream background. 6–12 individual objects related to the subject arranged in a considered grid or organic cluster with consistent breathing room between them. Each object has a soft overhead shadow and a small numbered label (① ② ③) with optional tiny descriptor caption. One object may sit slightly larger as the hero. A small collection title at the top or top-left and a small date/edition label at the bottom — both in thin, light, deferential type. NO display type, NO large headlines. The objects do all the visual work; the type serves them. This is NOT a Pinterest mood board, NOT a generic product flat-lay, NOT a brand-deck slide, NOT a magazine page spread, NOT a hero product ad.
 
 **Aesthetic description:**
 Everyday objects elevated to artifact status through careful curation and presentation. Objects arranged in neat grids or organic clusters on neutral backgrounds — scanned silhouettes, top-down photographs, or clean illustrations with museum-style numbering and labels. Part still life, part scrapbook, part specimen sheet. The logic is catalog: every object is numbered, named, and given equal visual weight. Deeply nostalgic, tactile, and emotionally specific.
@@ -1040,6 +1133,9 @@ Do not use the photograph as a full-bleed image. Instead, isolate the subject an
 **Output feeling:**
 Should feel like someone opened their most meaningful drawer and arranged it for you to see. Personal without being private. The kind of image that makes people say "I didn't know I needed this" and then immediately think about what their version would look like.
 
+**Negative prompts (anti-drift):**
+No large display type. No marketing CTA copy. No saturated bright background. No generic stock objects — objects must be specific and personally telling. No hero product shot. No drop-shadow product mockups. No mood-board collage style. No overlapping objects. No more than one slightly larger hero. No high-contrast type.
+
 ---
 
 ## Style 13 — Punk Grunge
@@ -1047,8 +1143,13 @@ Should feel like someone opened their most meaningful drawer and arranged it for
 **Mood:** Rebellious, raw, alive. Feels like it was photocopied three times and wheat-pasted over something else.
 **Best for:** Music releases, streetwear, activist campaigns, underground events, brands rejecting polish.
 **Reference:** Kittl 2026 trend — Punk Grunge. DIY zine culture, xerox art, 1970s–80s punk flyer tradition, torn collage aesthetics.
+**Reference image:** `references/images/style-13-punk-grunge.jpg`  
+Public URL: https://sijingsun.github.io/the-art-director/references/images/style-13-punk-grunge.jpg
 
 ### Parameters
+
+**Reference anatomy lock:**
+This is a wheat-pasted DIY zine flyer. Black or stark-newsprint base. A heavy distressed display title that could land anywhere (top, center, or broken across zones), at least one supporting text element on a different orientation (diagonal or vertical), scattered words/numbers at varied scales and angles ignoring any grid, optional one-or-two-word handwritten annotation in a contrasting color, and rubber-stamp-style or tiny distressed date/handle/location text somewhere near the bottom. Elements bleed to or past the edge — no consistent margin. Every surface shows xerox grain, torn paper edges, ink smear, or halftone dot pattern. This is NOT a clean modern poster, NOT a corporate ad, NOT a brand-guideline page, NOT a vector illustration, NOT a polished social-media graphic.
 
 **Aesthetic description:**
 DIY print culture at maximum intensity. Xerox grain, torn paper edges, distressed textures, hand-cut collage, overexposed photography, handwritten or rubber-stamp type mixed with aggressive display type. Nothing is clean, nothing is smooth, nothing is centered unless deliberately so as an ironic statement. The message is: this was made by human hands under urgency. Every element looks like it could be peeled off a telephone pole.
@@ -1105,6 +1206,9 @@ Apply a xerox/photocopy simulation to any uploaded photograph: push contrast to 
 **Output feeling:**
 Should feel like it was made under urgency with whatever was available. Photocopied, cut, glued, and wheat-pasted on a wall before anyone could stop it. Alive in a way that no polished design can be.
 
+**Negative prompts (anti-drift):**
+No clean digital type. No vector-crisp shapes. No drop shadows. No gradient fills. No corporate brand polish. No symmetrical composition. No consistent margin. No high-resolution photographic detail in the subject — the xerox treatment must dominate. No more than one accent color. No emoji, no app UI.
+
 ---
 
 ## Style 14 — Future Medieval
@@ -1112,8 +1216,13 @@ Should feel like it was made under urgency with whatever was available. Photocop
 **Mood:** Mythic, sacred, darkly ornate. Feels like a cathedral rebuilt inside a server room.
 **Best for:** Nightclub events, music releases, luxury fashion, gaming brands, dark creative agencies, NYE events.
 **Reference:** Kittl 2026 trend — Future Medieval. Gothic heraldry + digital chrome effects, blackletter type with neon glow, illuminated manuscript patterns rendered in holographic material.
+**Reference image:** `references/images/style-14-future-medieval.jpg`  
+Public URL: https://sijingsun.github.io/the-art-director/references/images/style-14-future-medieval.jpg
 
 ### Parameters
+
+**Reference anatomy lock:**
+This is a sacred-meets-synthetic event poster. Strong vertical bilateral symmetry. Central subject elevated at top-center or center as an object of veneration, surrounded by heraldic border decorations (knotwork, vine ornaments, shield shapes, banner ribbons) framing the entire poster — corner ornaments, side vine work, bottom flourishes. Primary blackletter title at the top, possibly on a banner ribbon, with a heraldic crest or shield acting as a separator below it. Supporting heraldic creatures or shields flank the subject symmetrically. Date/location on a ribbon or in small gothic type at the bottom. Background is near-black or deep jewel tone with warm candle-glow as the light source. Chrome/iridescent treatment on the subject and key elements. This is NOT a clean modern poster, NOT a fantasy book cover, NOT a generic Halloween graphic, NOT a renaissance-fair flyer, NOT a generic dark fashion ad.
 
 **Aesthetic description:**
 Medieval visual vocabulary — blackletter type, heraldic crests, illuminated manuscript borders, gothic arches, mythic creatures, candles, ribbons, banners — fused with digital-age rendering: chrome reflections, iridescent surfaces, neon inner glows, and dark electronic event poster energy. The sacred and the synthetic. Feels like a nightclub that was consecrated as a chapel, or a fashion brand that worships at an altar.
@@ -1168,6 +1277,9 @@ Render the subject as a sacred or reverential object — elevate it visually as 
 **Output feeling:**
 Should feel sacred and slightly dangerous at the same time. The kind of poster that looks like it belongs in both a cathedral and a club. A viewer should feel like they're being invited into something exclusive and ancient.
 
+**Negative prompts (anti-drift):**
+No flat bright colors. No clean modern sans-serif title — blackletter only (with optional clinical-sans pairing for fine detail). No symmetry breaks. No empty corners — heraldic frame must be present. No photorealistic medieval cosplay. No generic Halloween imagery. No clip-art swords or shields. No drop shadows that read as digital — every shadow is candle-cast.
+
 ---
 
 ## Style 15 — Surveillance Design
@@ -1175,8 +1287,13 @@ Should feel sacred and slightly dangerous at the same time. The kind of poster t
 **Mood:** Cold, precise, watchful. Feels like you've been seen by a system that doesn't care about you.
 **Best for:** Tech campaigns, editorial design, conceptual art projects, identity and privacy themes, fashion with edge.
 **Reference:** Kittl 2026 trend — Surveillance Design. CCTV stills, facial recognition UI, biometric HUDs, thermal imaging, machine vision overlays.
+**Reference image:** `references/images/style-15-surveillance-design.jpg`  
+Public URL: https://sijingsun.github.io/the-art-director/references/images/style-15-surveillance-design.jpg
 
 ### Parameters
+
+**Reference anatomy lock:**
+This is a CCTV system screenshot repurposed as a poster. Near-black background like a monitor in a dark room. A camera ID, location label, and timestamp run along a top bar in monospaced type. The subject sits inside a corner-marker bounding box with a recognition label above ('FEMALE MUSE', 'TARGET', 'SUBJECT A') and a confidence percentage below. Scattered data readouts (measurements, status flags, confidence scores) align to an invisible grid. Optional side data column of attributes. Bottom bar carries scene number, date, system version, operator ID — same monospaced treatment as the top bar. One functional accent color only (safety green, warning red, or data blue) used consistently. There is NO traditional poster title — all copy is functional system data. This is NOT a designed-looking marketing poster, NOT a clean dashboard mockup, NOT a sci-fi movie poster, NOT a fashion editorial.
 
 **Aesthetic description:**
 Machine vision aesthetic extracted from security infrastructure. CCTV feed frames, bounding boxes around faces and bodies, facial recognition grids, biometric data overlays, thermal imaging color maps, crosshairs, system log typography, timestamp HUDs. The palette is cold and utilitarian: monochrome with occasional functional color (green for recognized, red for flagged, blue for data). Everything feels like UI that was designed for observation, not for aesthetics — and that functional coldness is what makes it visually striking when applied to design.
@@ -1232,6 +1349,9 @@ Keep the photograph but apply machine vision overlays: draw a bounding box aroun
 **Output feeling:**
 Should feel cold and precise — like being observed by something that doesn't care about you. Unsettling in a way that's also compelling. The clinical emptiness is what creates the visual tension.
 
+**Negative prompts (anti-drift):**
+No display type — monospaced only. No multiple accent colors. No warm color grade on the subject. No designed-poster title. No drop shadows. No paper grain. No script lettering. No decorative shapes. No bright backgrounds. No clean tech-product framing — this must look like an actual surveillance feed, not a designed UI mockup.
+
 ---
 
 ## Style 16 — Signal Aesthetic
@@ -1239,8 +1359,13 @@ Should feel cold and precise — like being observed by something that doesn't c
 **Mood:** Kinetic, overstimulated, nostalgic for a future that felt possible. Feels like the intro sequence of a show you watched on Saturday morning.
 **Best for:** Apparel, music releases, digital campaigns, podcast visuals, brands with Y2K nostalgia, energetic social content.
 **Reference:** Kittl 2026 trend — Signal Graphics. 90s TV broadcast idents, MTV bumpers, early CGI, RGB color separation, glitch letterforms, colliding shapes.
+**Reference image:** `references/images/style-16-signal-aesthetic.jpg`  
+Public URL: https://sijingsun.github.io/the-art-director/references/images/style-16-signal-aesthetic.jpg
 
 ### Parameters
+
+**Reference anatomy lock:**
+This is a frame frozen mid-broadcast: a 1990s channel ident or MTV bumper rendered as a still poster. Full-bleed bright saturated gradient background (electric aqua, hot magenta, electric blue, or neon lime). Subject rendered in plastic early-CGI 3D with RGB channel separation creating chromatic aberration halos and motion blur trails. Multiple layered elements competing for attention: geometric shapes (stars, circles, lightning bolts, triangles, arrows) scattered throughout, strong diagonal movement lines. Primary title stretched or compressed mid-motion, RGB-separated, possibly split across lines at different scales suggesting depth. Supporting text at varied angles embedded in the shape field. Optional TV-style lower-third bar with date/detail. Bleeds to all edges — no breathing room. This is NOT a clean static poster, NOT a minimal modern design, NOT a vector flat-design illustration, NOT a corporate tech ad.
 
 **Aesthetic description:**
 Visual language of 1990s television branding and broadcast design — the era of channel idents, music channel bumpers, and early CGI title sequences. Animated shapes that appear to be mid-motion: colliding, mutating, exploding. RGB color channels separated and offset so red, green, and blue versions of each element are slightly misaligned. Hyper-saturated primary and neon colors. 3D-looking objects rendered in the style of early CGI — slightly plastic, slightly wrong. Text that appears to be in motion — stretched, compressed mid-action.
@@ -1294,6 +1419,9 @@ Render the subject in a stylized 3D treatment with a slightly plastic, early-CGI
 **Output feeling:**
 Should feel like the Saturday morning cartoon intro you watched so many times you can still hear the music. Nostalgic for a specific kind of digital optimism that existed before everything became smooth and minimal. Loud in the best possible way.
 
+**Negative prompts (anti-drift):**
+No static clean type — every type element shows motion (RGB separation, stretching, extrusion, or motion blur). No muted colors, no pastels, no neutrals. No empty negative space. No symmetrical centered composition. No paper grain or film grain. No drop shadows under elements — only motion blur. No vector flat illustration. No realistic 3D rendering — must be plastic early-CGI.
+
 ---
 
 ## Style 17 — Frutiger Aero
@@ -1301,8 +1429,13 @@ Should feel like the Saturday morning cartoon intro you watched so many times yo
 **Mood:** Optimistic, clean, utopian. Feels like the default wallpaper of a world where technology delivered on every promise.
 **Best for:** Tech brands, SaaS, digital products, retro-futurist campaigns, brands signaling clarity and optimism.
 **Reference:** Kittl 2026 trend — Frutiger Aero. Early 2000s Windows XP/Vista era, Nokia advertising, airport wayfinding, glossy UI design circa 2004–2010.
+**Reference image:** `references/images/style-17-frutiger-aero.jpg`  
+Public URL: https://sijingsun.github.io/the-art-director/references/images/style-17-frutiger-aero.jpg
 
 ### Parameters
+
+**Reference anatomy lock:**
+This is a 2004–2010 tech-utopian product launch poster. Bright sky-blue gradient or clean white-to-aqua background. Subject floating with a glossy specular highlight arc, slight soft drop shadow beneath suggesting weightlessness. Scattered floating translucent orbs/bubbles, swoosh marks, and 2–3 lens flares from practical light sources. Brand or product name at top-center or top-left in clean rounded sans, primary tagline below the subject, 2–3 short benefit-statement lines in lighter small type, URL/handle/CTA in small clean type at the bottom. Generous airy negative space. This is NOT a modern flat-design SaaS landing page, NOT a Brutalist tech poster, NOT a dark-mode product launch, NOT a luxury campaign, NOT a Y2K maximalist collage.
 
 **Aesthetic description:**
 The visual language of early 2000s digital optimism — glossy aqua and teal gradients, floating translucent globes and orbs, lens flares, lush grass and blue sky photography, bubble-like reflective typography, clean sans-serif wayfinding type. Originally from airport signage, tech branding, and interface design of the Windows XP/Vista era. Everything is glossy, clean, and promises a world of effortless digital connection. In 2026 this palette reads as warmly nostalgic — the future we hoped we were getting.
@@ -1357,6 +1490,9 @@ Keep the subject photographic but apply three specific treatments: (1) isolate i
 **Output feeling:**
 Should feel like a promise — like the future is going to be clean and effortless and you're already living in it. The specific warmth of early 2000s technological optimism before anyone knew better. A viewer should feel slightly hopeful.
 
+**Negative prompts (anti-drift):**
+No dark backgrounds. No grain, no distress, no roughness. No flat-design current-era look. No dark mode. No oversaturated neon colors (those belong to Style 16). No heavy condensed grotesques — only friendly rounded sans. No torn edges, no chrome chaos. No black type — use deep teal or white. No crowded composition.
+
 ---
 
 ## Style 18 — Type Collage
@@ -1364,8 +1500,13 @@ Should feel like a promise — like the future is going to be clean and effortle
 **Mood:** Chaotic-good, expressive, kinetic. Feels like a zine page that went to art school.
 **Best for:** Social content, streetwear brands, music releases, zine culture, editorial campaigns, bold brand moments.
 **Reference:** Kittl 2026 trend — Type Collage. Chrome 3D letterforms, torn magazine type, mixed-scale typography collisions, Vietnamese poster design, 90s editorial maximalism.
+**Reference image:** `references/images/style-18-type-collage.jpg`  
+Public URL: https://sijingsun.github.io/the-art-director/references/images/style-18-type-collage.jpg
 
 ### Parameters
+
+**Reference anatomy lock:**
+This is a zine-energy editorial cover where typography is the subject. Full poster coverage — no consistent grid, no empty zones unless deliberately percussive. At least three different type scales coexist simultaneously (very large filling half the poster, medium, very small). At least two incompatible typographic registers from this set: heavy grotesque, chrome 3D, hand-drawn, torn-magazine cutout — pick at least two and place them together. At least one major element rotated 15–45 degrees. At least one element with torn paper edges. Subject photograph, if present, is raw material — cropped aggressively, partially placed, type running over and through it. Multiple material textures coexist: chrome reflections, torn fibrous edges, hand-painted bristle, halftone grain. The largest type element is 10–15x the height of the smallest. This is NOT a clean editorial layout, NOT a single-typeface modern poster, NOT a minimalist design, NOT a clean grid system.
 
 **Aesthetic description:**
 Typography treated as material rather than communication. Letters are torn, layered, rendered in 3D chrome or iridescent surfaces, mixed at wildly incompatible scales, collided and overlapped until they become texture. Multiple typefaces in the same composition — some flat, some dimensional, some hand-drawn, some mechanical. The page is covered: no negative space, or if there is negative space it is as deliberate as a percussion rest. Reading the type is secondary to experiencing it as a visual field.
@@ -1418,3 +1559,7 @@ The subject photograph, if provided, is raw material — not a hero. Crop it agg
 
 **Output feeling:**
 Should feel like something made by someone who knows every rule and is choosing to break all of them at once — and it works because the breaking is intentional. Chaotic-good. The kind of visual that people screenshot and save without knowing exactly why.
+
+**Negative prompts (anti-drift):**
+No uniformity. No single typeface throughout. No clean grid. No empty negative space (or empty space only if used as deliberate rest). No symmetrical center-anchored title. No vector-flat illustration as the focal point. No drop shadows treating type as a uniform surface — each type element must have its own material. No consistent stroke weight across all type. No clean product photography as the focus.
+
