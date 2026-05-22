@@ -101,7 +101,3 @@ ChatGPT Image 2.0 and most modern image generators produce dramatically better, 
 Every hero prompt the skill produces comes with an explicit "attach this image" instruction naming the matching file in `references/images/`. Skip the attachment and the model will drift toward its own interpretation of "moody fashion editorial" or "psychedelic folk poster" — which is rarely what you want.
 
 ---
-
-## By
-
-Clair Sun — [clairsun.design](https://clairsun.design)
